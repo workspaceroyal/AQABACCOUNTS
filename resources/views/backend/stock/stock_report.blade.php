@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">All Fund Report</h4>
+                                    <h4 class="mb-sm-0">সকল তহবিল রিপোর্ট</h4>
 
 
 
@@ -23,22 +23,22 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('stock.report.pdf') }}" target="_blank" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-print"> Fund Report Print </i></a> <br>  <br>
+    <a href="{{ route('stock.report.pdf') }}" target="_blank" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-print">তহবিল রিপোর্ট প্রিন্ট </i></a> <br>  <br>
 
-                    <h4 class="card-title">Fund Report All Data</h4>
+                    <h4 class="card-title">তহবিল রিপোর্ট সকল ডাটা</h4>
 
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Funding Source</th>
-                            <th>Currency</th>
-                            <th>Fund Sector</th>
-                            <th>Month & Year</th>
-                            <th>In Amount</th>
-                            <th>Out Amount </th>
-                            <th>Funds</th>
+                            <th>নং</th>
+                            <th>আয়ের উৎস</th>
+                            <th>মুদ্রা</th>
+                            <th>অর্থের খাত</th>
+                            <th>মাস ও সন</th>
+                            <th>জমার পরিমাণ</th>
+                            <th>খরচের পরিমাণ </th>
+                            <th>তহবিল</th>
 
                         </thead>
 

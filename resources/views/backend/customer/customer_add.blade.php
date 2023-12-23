@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Add Expense Sector</h4><br><br>
+            <h4 class="card-title">ব্যয়ের খাত যুক্ত করুন</h4><br><br>
 
 
 
@@ -18,7 +18,7 @@
                 @csrf
 
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Expense Sector Name </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">নাম </label>
                 <div class="form-group col-sm-10">
                     <input name="name" class="form-control" type="text"    >
                 </div>
@@ -27,7 +27,7 @@
 
 
               <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Expense Sector Mobile </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">মোবাইল </label>
                 <div class="form-group col-sm-10">
                     <input name="mobile_no" class="form-control" type="text"    >
                 </div>
@@ -36,7 +36,7 @@
 
 
   <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Expense Sector Email </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">ইমেইল </label>
                 <div class="form-group col-sm-10">
                     <input name="email" class="form-control" type="email"  >
                 </div>
@@ -45,7 +45,7 @@
 
 
   <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Expense Sector Address </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">ঠিকানা </label>
                 <div class="form-group col-sm-10">
                     <input name="address" class="form-control" type="text"  >
                 </div>
@@ -53,7 +53,7 @@
             <!-- end row -->
 
               <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Expense Sector Image </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">ছবি </label>
                 <div class="form-group col-sm-10">
        <input name="customer_image" class="form-control" type="file"  id="image">
                 </div>
@@ -72,7 +72,7 @@
 
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Add Expense Sector">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="যুক্ত করুন">
             </form>
 
 
@@ -109,19 +109,19 @@
             },
             messages :{
                 name: {
-                    required : 'Please Enter Your Name',
+                    required : 'নাম যুক্ত করুন',
                 },
                 mobile_no: {
-                    required : 'Please Enter Your Mobile Number',
+                    required : 'মোবাইল যুক্ত করুন',
                 },
                 email: {
-                    required : 'Please Enter Your Email',
+                    required : 'ইমেইল যুক্ত করুন',
                 },
                 address: {
-                    required : 'Please Enter Your Address',
+                    required : 'ঠিকানা যুক্ত করুন',
                 },
                  customer_image: {
-                    required : 'Please Select one Image',
+                    required : 'ছবি যুক্ত করুন',
                 },
             },
             errorElement : 'span',

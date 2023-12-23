@@ -37,7 +37,7 @@ class PurchaseController extends Controller
     if ($request->category_id == null) {
 
        $notification = array(
-        'message' => 'Sorry you do not select any item',
+        'message' => 'দুঃখিত আপনি কোন আই্টেম সিলেক্ট করেননি',
         'alert-type' => 'error'
     );
     return redirect()->back( )->with($notification);
@@ -64,7 +64,7 @@ class PurchaseController extends Controller
     } // end else
 
     $notification = array(
-        'message' => 'Data Save Successfully',
+        'message' => 'ডাটা সফল ভাবে সেইভ হয়েছে',
         'alert-type' => 'success'
     );
     return redirect()->route('purchase.all')->with($notification);
@@ -76,7 +76,7 @@ class PurchaseController extends Controller
         Purchase::findOrFail($id)->delete();
 
          $notification = array(
-        'message' => 'Deposit Iteam Deleted Successfully',
+        'message' => 'জমা আইটেম সফল ভাবে ডিলেট হয়েছে',
         'alert-type' => 'success'
     );
     return redirect()->back()->with($notification);
@@ -105,7 +105,7 @@ class PurchaseController extends Controller
             ]);
 
              $notification = array(
-        'message' => 'Status Approved Successfully',
+        'message' => 'অবস্থা সফল ভাবে এপ্রুভ হয়েছে',
         'alert-type' => 'success'
           );
     return redirect()->route('purchase.all')->with($notification);

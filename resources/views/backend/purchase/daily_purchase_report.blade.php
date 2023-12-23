@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Daily Deposit Report </h4><br><br>
+            <h4 class="card-title">প্রত্যাহিক জমা রিপোর্ট </h4><br><br>
 
 <form method="GET" action="{{ route('daily.purchase.pdf') }}" target="_blank" id="myForm">
     <div class="row">
@@ -19,7 +19,7 @@
 
         <div class="col-md-4">
             <div class="md-3 form-group">
-                <label for="example-text-input" class="form-label">Start Date</label>
+                <label for="example-text-input" class="form-label">শুরু তারিখ</label>
                  <input class="form-control example-date-input" name="start_date" type="date"  id="start_date" placeholder="YY-MM-DD">
             </div>
         </div>
@@ -27,7 +27,7 @@
 
         <div class="col-md-4">
             <div class="md-3 form-group">
-                <label for="example-text-input" class="form-label">End Date</label>
+                <label for="example-text-input" class="form-label">শেষ তারিখ</label>
                  <input class="form-control example-date-input" name="end_date" type="date"  id="end_date" placeholder="YY-MM-DD">
             </div>
         </div>
@@ -35,7 +35,7 @@
          <div class="col-md-4">
             <div class="md-3">
                 <label for="example-text-input" class="form-label" style="margin-top:43px;"> </label>
-             <button type="submit" class="btn btn-info">Search</button>
+             <button type="submit" class="btn btn-info">সার্চ</button>
             </div>
         </div>
 
@@ -73,10 +73,10 @@
             },
             messages :{
                 start_date: {
-                    required : 'Please Select Start Date',
+                    required : 'শুরু তারিখ সিলেক্ট করুন',
                 },
                 end_date: {
-                    required : 'Please Select End Date',
+                    required : 'শেষ তারিখ সিলেক্ট করুন',
                 },
 
             },

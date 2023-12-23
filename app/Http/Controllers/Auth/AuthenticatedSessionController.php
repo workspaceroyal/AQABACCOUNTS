@@ -33,7 +33,7 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerate();
 
         $notification = array(
-            'message' => 'Login Successfully',
+            'message' => 'সফল ভাবে লগইন হয়েছে',
             'alert-type' => 'success'
         );
 

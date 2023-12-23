@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Add Fund Sector </h4><br><br>
+            <h4 class="card-title"> অর্থের খাত যুক্ত করুন </h4><br><br>
 
 
 
@@ -18,7 +18,7 @@
                 @csrf
 
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Fund Sector Name </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">নাম </label>
                 <div class="form-group col-sm-10">
                     <input name="name" class="form-control" type="text"    >
                 </div>
@@ -26,7 +26,7 @@
             <!-- end row -->
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Add Fund Sector">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="যুক্ত করুন">
             </form>
 
 

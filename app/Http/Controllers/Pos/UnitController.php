@@ -33,7 +33,7 @@ class UnitController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Currency Inserted Successfully',
+            'message' => 'মুদ্রা সফল ভাবে ইনসার্ট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -62,7 +62,7 @@ class UnitController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Currency Updated Successfully',
+            'message' => 'মুদ্রা সফল ভাবে আপডেট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -76,7 +76,7 @@ class UnitController extends Controller
           Unit::findOrFail($id)->delete();
 
        $notification = array(
-            'message' => 'Currency Deleted Successfully',
+            'message' => 'মুদ্রা সফল ভাবে ডিলেট হয়েছে',
             'alert-type' => 'success'
         );
 

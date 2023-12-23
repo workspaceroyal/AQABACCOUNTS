@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Add Month & Year</h4><br><br>
+            <h4 class="card-title">মাস ও সন যুক্ত করুন</h4><br><br>
 
 
 
@@ -18,7 +18,7 @@
                 @csrf
 
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Month & Year </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">মাস ও সন </label>
                 <div class="form-group col-sm-10">
                     <input name="name" class="form-control" type="text"    >
                 </div>
@@ -27,10 +27,10 @@
 
 
             <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Funding Source </label>
+        <label class="col-sm-2 col-form-label">আয়ের উৎস </label>
         <div class="col-sm-10">
             <select name="supplier_id" class="form-select" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
                 @foreach($supplier as $supp)
                 <option value="{{ $supp->id }}">{{ $supp->name }}</option>
                @endforeach
@@ -40,10 +40,10 @@
   <!-- end row -->
 
       <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Currency </label>
+        <label class="col-sm-2 col-form-label">মুদ্রা </label>
         <div class="col-sm-10">
             <select name="unit_id" class="form-select" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
                 @foreach($unit as $uni)
                 <option value="{{ $uni->id }}">{{ $uni->name }}</option>
                @endforeach
@@ -55,10 +55,10 @@
 
 
       <div class="mb-3 row">
-        <label class="col-sm-2 col-form-label">Fund Sector </label>
+        <label class="col-sm-2 col-form-label">অর্থের খাত </label>
         <div class="col-sm-10">
             <select name="category_id" class="form-select" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
                 @foreach($category as $cat)
                 <option value="{{ $cat->id }}">{{ $cat->name }}</option>
                @endforeach
@@ -68,7 +68,7 @@
   <!-- end row -->
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Add Month & Year">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="যুক্ত করুন">
             </form>
 
 
@@ -102,16 +102,16 @@
             },
             messages :{
                 name: {
-                    required : 'Please Enter Your Month & Year Name',
+                    required : 'মাস ও সন যুক্ত করুন',
                 },
                 supplier_id: {
-                    required : 'Please Select One Funding Source',
+                    required : 'আয়ের উৎস সিলেক্ট করুন',
                 },
                 unit_id: {
-                    required : 'Please Select One Currency',
+                    required : 'কারেন্সি সিলেক্ট করুন',
                 },
                 category_id: {
-                    required : 'Please Select One Fund Sector',
+                    required : 'আয়ের খাত সিলেক্ট করুন',
                 },
             },
             errorElement : 'span',

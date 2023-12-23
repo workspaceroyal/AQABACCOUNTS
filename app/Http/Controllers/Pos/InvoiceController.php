@@ -52,7 +52,7 @@ class InvoiceController extends Controller
     if ($request->category_id == null) {
 
        $notification = array(
-        'message' => 'Sorry You do not select any item',
+        'message' => 'দুঃখিত আপনি কোন আইটেম সিলেক্ট করবেননি',
         'alert-type' => 'error'
     );
     return redirect()->back()->with($notification);
@@ -61,7 +61,7 @@ class InvoiceController extends Controller
         if ($request->paid_amount > $request->estimated_amount) {
 
            $notification = array(
-        'message' => 'Sorry Paid Amount is Maximum the total price',
+        'message' => 'দুঃখিত প্রদত্ত পরিমাণ মোট মূল্যের চেয়ে বেশি',
         'alert-type' => 'error'
     );
     return redirect()->back()->with($notification);
@@ -138,7 +138,7 @@ class InvoiceController extends Controller
     }
 
      $notification = array(
-        'message' => 'Expense Data Inserted Successfully',
+        'message' => 'খরচের ডাটা সফল ভাবে ইনসার্ট হয়েছে',
         'alert-type' => 'success'
     );
     return redirect()->route('invoice.pending.list')->with($notification);
@@ -161,7 +161,7 @@ class InvoiceController extends Controller
         PaymentDetail::where('invoice_id',$invoice->id)->delete();
 
          $notification = array(
-        'message' => 'Expense Deleted Successfully',
+        'message' => 'খরচ সফল ভাবে ডিলেট হয়েছে',
         'alert-type' => 'success'
     );
     return redirect()->back()->with($notification);
@@ -186,7 +186,7 @@ class InvoiceController extends Controller
             if($product->quantity < $request->selling_qty[$key]){
 
         $notification = array(
-        'message' => 'Sorry you approve Maximum Value',
+        'message' => 'দুঃখিত আপনি অতিরিক্ত এপ্রুভ করেছেন',
         'alert-type' => 'error'
     );
     return redirect()->back()->with($notification);
@@ -214,7 +214,7 @@ class InvoiceController extends Controller
         });
 
     $notification = array(
-        'message' => 'Expense Approve Successfully',
+        'message' => 'খরচ সফল ভাবে এপ্রুভ হয়েছে',
         'alert-type' => 'success'
     );
     return redirect()->route('invoice.pending.list')->with($notification);

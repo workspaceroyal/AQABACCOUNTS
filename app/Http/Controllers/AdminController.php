@@ -18,7 +18,7 @@ class AdminController extends Controller
         $request->session()->regenerateToken();
 
         $notification = array(
-            'message' => 'Logout Successfully',
+            'message' => 'সফল ভাবে লগআউট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -58,7 +58,7 @@ class AdminController extends Controller
         $data->save();
 
         $notification = array(
-            'message' => 'Profile Updated Successfully',
+            'message' => 'প্রফাইল সফল ভাবে আপডেট আপডেট হয়েছে',
             'alert-type' => 'info'
         );
 
@@ -89,10 +89,10 @@ class AdminController extends Controller
             $users->password = bcrypt($request->newpassword);
             $users->save();
 
-            session()->flash('message','Password Updated Successfully');
+            session()->flash('message','পাসওয়ার্ড সফল ভাবে আপডেট হয়েছে');
             return redirect()->back();
         } else{
-            session()->flash('message','Old password is not match');
+            session()->flash('message','পুরাতন পাসওয়ার্ড ম্যাচ করেনি');
             return redirect()->back();
         }
 

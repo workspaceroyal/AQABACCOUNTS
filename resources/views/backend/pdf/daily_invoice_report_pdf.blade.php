@@ -8,12 +8,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Daily Expense Report</h4>
+                                    <h4 class="mb-sm-0">প্রাত্যহিক খরচ রিপোর্ট</h4>
 
                                     <div class="page-title-right">
                                         <ol class="m-0 breadcrumb">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);"> </a></li>
-                                            <li class="breadcrumb-item active">Daily Expense Report</li>
+                                            <li class="breadcrumb-item active">প্রাত্যহিক খরচ রিপোর্ট</li>
                                         </ol>
                                     </div>
 
@@ -32,7 +32,7 @@
             <div class="invoice-title">
 
                 <h3>
-                    <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="logo" height="24"/> Al-Quran Academy Bangladesh
+                    <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="logo" height="24"/> আল-কুরআন একাডেমি বাংলাদেশ
                 </h3>
             </div>
             <hr>
@@ -40,9 +40,9 @@
             <div class="row">
                 <div class="mt-4 col-6">
                     <address>
-                        <strong>Al-Quran Academy Bangladesh:</strong><br>
-                        Purana Palton Dhaka<br>
-                        aqab@gmail.com.com
+                        <strong>আল-কুরআন একাডেমি বাংলাদেশ:</strong><br>
+                        ৩২ পুরানা পল্টন, ঢাকা ১০০০, বাংলাদেশ<br>
+                        alquranacademybangladesh@gmail.com
                     </address>
                 </div>
                 <div class="mt-4 col-6 text-end">
@@ -60,7 +60,7 @@
         <div class="col-12">
             <div>
                 <div class="p-2">
-                    <h3 class="font-size-16"><strong>Daily Expense Report
+                    <h3 class="font-size-16"><strong>প্রাত্যহিক খরচ রিপোর্ট
     <span class="btn btn-info"> {{ date('d-m-Y',strtotime($start_date)) }} </span> -
      <span class="btn btn-success"> {{ date('d-m-Y',strtotime($end_date)) }} </span>
                     </strong></h3>
@@ -86,15 +86,15 @@
     <table class="table">
         <thead>
         <tr>
-            <td><strong>Sl </strong></td>
-            <td class="text-center"><strong>Expense Sector</strong></td>
-            <td class="text-center"><strong>Expense No  </strong>
+            <td><strong>নং </strong></td>
+            <td class="text-center"><strong>ব্যয়ের খাত</strong></td>
+            <td class="text-center"><strong>খরচ নং  </strong>
             </td>
-            <td class="text-center"><strong>Date</strong>
+            <td class="text-center"><strong>তারিখ</strong>
             </td>
-            <td class="text-center"><strong>Description</strong>
+            <td class="text-center"><strong>বিবরণ</strong>
             </td>
-            <td class="text-center"><strong>Amount  </strong>
+            <td class="text-center"><strong>পরিমাণ  </strong>
             </td>
 
 
@@ -130,7 +130,7 @@
                 <td class="no-line"></td>
                 <td class="no-line"></td>
                 <td class="text-center no-line">
-                    <strong>Grand Amount</strong></td>
+                    <strong>সর্বমোট</strong></td>
                 <td class="no-line text-end"><h4 class="m-0"> ৳ {{ $total_sum}}</h4></td>
             </tr>
                             </tbody>
@@ -139,7 +139,7 @@
 
                     <div class="d-print-none">
                         <div class="float-end">
-                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> Print / Download</i></a>
+                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট / ডাউনলোড</i></a>
                             {{-- <a href="javascript:window.print()" class="btn btn-primary waves-effect waves-light ms-2">Download</a> --}}
                         </div>
                     </div>

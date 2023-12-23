@@ -33,7 +33,7 @@ class CategoryController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Fund Sector Inserted Successfully',
+            'message' => 'অর্থের খাত সফলভাবে ইনসার্ট করা হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -61,7 +61,7 @@ class CategoryController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Fund Sector Updated Successfully',
+            'message' => 'অর্থের খাত সফলভাবে আপডেট করা হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -75,7 +75,7 @@ class CategoryController extends Controller
           Category::findOrFail($id)->delete();
 
        $notification = array(
-            'message' => 'Fund Sector Deleted Successfully',
+            'message' => 'অর্থের খাত ডিলেট ইনসার্ট করা হয়েছে',
             'alert-type' => 'success'
         );
 

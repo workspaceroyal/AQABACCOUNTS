@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">All Payable Expense</h4>
+                                    <h4 class="mb-sm-0">পরিশোধনীয় ব্যয়ের সকল রিপোর্ট</h4>
 
 
 
@@ -23,20 +23,20 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('paid.customer.print.pdf') }}" class="btn btn-dark btn-rounded waves-effect waves-light" target="_black" style="float:right;"><i class="fa fa-print"> Print Payable Expense </i></a> <br>  <br>
+    <a href="{{ route('paid.customer.print.pdf') }}" class="btn btn-dark btn-rounded waves-effect waves-light" target="_black" style="float:right;"><i class="fa fa-print"> পরিশোধনীয় ব্যয়ের রিপোর্ট প্রিন্ট </i></a> <br>  <br>
 
-                    <h4 class="card-title">Payable Expense All Data </h4>
+                    <h4 class="card-title">পরিশোধনীয় ব্যয়ে রিপোর্ট সকল ডাটা </h4>
 
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Name</th>
-                            <th>Expense No </th>
-                            <th>Date</th>
-                            <th>Advance Amount</th>
-                            <th>Action</th>
+                            <th>নং</th>
+                            <th>নাম</th>
+                            <th>ব্যয় নং </th>
+                            <th>তারিখ</th>
+                            <th>অগ্রিম পরিমাণ</th>
+                            <th>একশন</th>
 
                         </thead>
 
@@ -51,7 +51,7 @@
                             <td> {{ date('d-m-Y',strtotime($item['invoice']['date'])) }} </td>
                             <td> ৳ {{ $item->due_amount }} </td>
                             <td>
-   <a href="{{ route('customer.invoice.details.pdf',$item->invoice_id) }}" class="btn btn-info sm" target="_black" title="Customer Details">  <i class="fa fa-eye"></i> </a>
+   <a href="{{ route('customer.invoice.details.pdf',$item->invoice_id) }}" class="btn btn-info sm" target="_black" title="বিস্তারিত">  <i class="fa fa-eye"></i> </a>
 
 
                             </td>

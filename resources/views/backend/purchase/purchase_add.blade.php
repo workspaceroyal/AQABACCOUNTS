@@ -10,19 +10,19 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Add Deposit </h4><br><br>
+            <h4 class="card-title">নতুন জমা </h4><br><br>
 
     <div class="row">
         <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Date</label>
+                <label for="example-text-input" class="form-label">তারিখ</label>
                  <input class="form-control example-date-input" name="date" type="date"  id="date">
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Deposit No</label>
+                <label for="example-text-input" class="form-label">জমা নং</label>
                  <input class="form-control example-date-input" name="purchase_no" type="text"  id="purchase_no">
             </div>
         </div>
@@ -30,9 +30,9 @@
 
         <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Funding Source</label>
+                <label for="example-text-input" class="form-label">আয়ের উৎস</label>
                 <select id="supplier_id" name="supplier_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
                 @foreach($supplier as $supp)
                 <option value="{{ $supp->id }}">{{ $supp->name }}</option>
                @endforeach
@@ -43,9 +43,9 @@
 
        <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Fund Sector</label>
+                <label for="example-text-input" class="form-label">অর্থের খাত</label>
                 <select name="category_id" id="category_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
 
                 </select>
             </div>
@@ -54,9 +54,9 @@
 
          <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Month & Year</label>
+                <label for="example-text-input" class="form-label">মাস ও সন</label>
                 <select name="product_id" id="product_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
 
                 </select>
             </div>
@@ -68,7 +68,7 @@
         <label for="example-text-input" class="form-label" style="margin-top:43px;">  </label>
 
 
-        <i class="btn btn-secondary btn-rounded waves-effect waves-light fas fa-plus-circle addeventmore"> Add More</i>
+        <i class="btn btn-secondary btn-rounded waves-effect waves-light fas fa-plus-circle addeventmore"> আরো যুক্ত করুন</i>
     </div>
 </div>
 
@@ -87,13 +87,13 @@
             <table class="table-sm table-bordered" width="100%" style="border-color: #ddd;">
                 <thead>
                     <tr>
-                        <th>Fund Sector</th>
-                        <th>Month & Year</th>
-                        <th>Amount</th>
-                        <th>Recurrent</th>
-                        <th>Description</th>
-                        <th>Total Amount</th>
-                        <th>Action</th>
+                        <th>অর্থের উৎস</th>
+                        <th>মাস ও সন</th>
+                        <th>পরিমাণ</th>
+                        <th>পুনরাবৃত্তি</th>
+                        <th>বিবরণ</th>
+                        <th>মোট পরিমাণ</th>
+                        <th>একশন</th>
 
                     </tr>
                 </thead>
@@ -114,7 +114,7 @@
                 </tbody>
             </table><br>
             <div class="form-group">
-                <button type="submit" class="btn btn-info" id="storeButton"> Deposit Store</button>
+                <button type="submit" class="btn btn-info" id="storeButton">জমা করুন</button>
 
             </div>
 

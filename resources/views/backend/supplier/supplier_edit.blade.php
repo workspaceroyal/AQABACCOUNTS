@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Edit Funding Source</h4><br><br>
+            <h4 class="card-title">আয়ের উৎস এডিট</h4><br><br>
 
 
 
@@ -20,7 +20,7 @@
                 <input type="hidden" name="id" value="{{ $supplier->id }}">
 
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label"> Source Name </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label"> নাম </label>
                 <div class="form-group col-sm-10">
                     <input name="name" class="form-control" value="{{ $supplier->name }}" type="text"    >
                 </div>
@@ -29,7 +29,7 @@
 
 
               <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label"> Source Mobile </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label"> মোবাইল </label>
                 <div class="form-group col-sm-10">
                     <input name="mobile_no" value="{{ $supplier->mobile_no }}" class="form-control" type="text"    >
                 </div>
@@ -38,7 +38,7 @@
 
 
   <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label"> Source Email </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label"> ইমেইল </label>
                 <div class="form-group col-sm-10">
                     <input name="email" value="{{ $supplier->email }}" class="form-control" type="email"  >
                 </div>
@@ -47,7 +47,7 @@
 
 
   <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label"> Source Address </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label"> ঠিকানা </label>
                 <div class="form-group col-sm-10">
                     <input name="address" value="{{ $supplier->address }}" class="form-control" type="text"  >
                 </div>
@@ -58,7 +58,7 @@
 
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Update Funding Source">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="আপডেট করুন">
             </form>
 
 

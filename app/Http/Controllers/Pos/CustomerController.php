@@ -45,7 +45,7 @@ class CustomerController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Expense Sector Inserted Successfully',
+            'message' => 'ব্যয়ের খাত সফলভাবে ইনসার্ট করা হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -84,7 +84,7 @@ class CustomerController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Expense Sector Updated with Image Successfully',
+            'message' => 'ব্যয়ের খাত ছবি সহ সফলভাবে আপডেট করা হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -103,7 +103,7 @@ class CustomerController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Expense Sector Updated without Image Successfully',
+            'message' => 'ব্যয়ের খাত ছবি সহ সফলভাবে আপডেট করা হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -123,7 +123,7 @@ class CustomerController extends Controller
         Customer::findOrFail($id)->delete();
 
         $notification = array(
-            'message' => 'Expense Sector Deleted Successfully',
+            'message' => 'ব্যয়ের খাত সফলভাবে ডিলেট করা হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -162,7 +162,7 @@ class CustomerController extends Controller
         if ($request->new_paid_amount < $request->paid_amount) {
 
             $notification = array(
-            'message' => 'Sorry You Paid Maximum Value',
+            'message' => 'দুঃখিত আপনি অতিরিক্ত মূল্য পরিশোধ করেছেন',
             'alert-type' => 'error'
         );
         return redirect()->back()->with($notification);
@@ -190,7 +190,7 @@ class CustomerController extends Controller
             $payment_details->save();
 
               $notification = array(
-            'message' => 'Expense Update Successfully',
+            'message' => 'ব্যয় সফল ভাবে আপডেট হয়েছে',
             'alert-type' => 'success'
         );
         return redirect()->route('credit.customer')->with($notification);

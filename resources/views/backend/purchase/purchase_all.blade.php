@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">All Deposit</h4>
+                                    <h4 class="mb-sm-0">সকল জমা</h4>
 
 
 
@@ -23,23 +23,23 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('purchase.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> Add Deposit </i></a> <br>  <br>
+    <a href="{{ route('purchase.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> নতুন জমা </i></a> <br>  <br>
 
-                    <h4 class="card-title">Deposit All Data </h4>
+                    <h4 class="card-title">জমা সকল ডাটা </h4>
 
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Deposit No</th>
-                            <th>Date </th>
-                            <th>Funding Source</th>
-                            <th>Fund Sector</th>
-                            <th>Amount</th>
-                            <th>Month & Year</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th>নং</th>
+                            <th>জমা নং</th>
+                            <th>তারিখ </th>
+                            <th>আয়ের উৎস</th>
+                            <th>অর্থের খাত</th>
+                            <th>পরিমাণ</th>
+                            <th>মাস ও সন</th>
+                            <th>অবস্থা</th>
+                            <th>একশন</th>
 
                         </thead>
 
@@ -58,15 +58,15 @@
 
                  <td>
                     @if($item->status == '0')
-                    <span class="btn btn-warning">Pending</span>
+                    <span class="btn btn-warning">পেন্ডিং</span>
                     @elseif($item->status == '1')
-                    <span class="btn btn-success">Approved</span>
+                    <span class="btn btn-success">এপ্রুভড</span>
                     @endif
                      </td>
 
                 <td>
 @if($item->status == '0')
-<a href="{{ route('purchase.delete',$item->id) }}" class="btn btn-danger sm" title="Delete Data" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+<a href="{{ route('purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 @endif
                 </td>
 

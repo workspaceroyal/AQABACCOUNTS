@@ -44,7 +44,7 @@ class ProductController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Month & Year Inserted Successfully',
+            'message' => 'মাস ও সন সফল ভাবে ইনসার্ট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -80,7 +80,7 @@ class ProductController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Month & Year Updated Successfully',
+            'message' => 'মাস ও সন সফল ভাবে আপডেট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -94,7 +94,7 @@ class ProductController extends Controller
 
        Product::findOrFail($id)->delete();
             $notification = array(
-            'message' => 'Month & Year Deleted Successfully',
+            'message' => 'মাস ও সন সফল ভাবে ডিলেট হয়েছে',
             'alert-type' => 'success'
         );
 

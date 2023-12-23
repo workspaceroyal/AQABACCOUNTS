@@ -12,7 +12,7 @@
                                 </span>
                             </a>
 
-                            <a href="{{ url('/dashboard') }}" class="logo logo-light">
+                            <a href="{{ url('/dashboard') }}" class=" logo logo-light">
                                 <span class="logo-sm">
                                     <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="logo-sm-light" height="22">
                                 </span>
@@ -29,7 +29,7 @@
     <!-- App Search-->
     <form class="app-search d-none d-lg-block">
         <div class="position-relative">
-            <input type="text" class="form-control" placeholder="Search...">
+            <input type="text" class="form-control" placeholder="সার্চ...">
             <span class="ri-search-line"></span>
         </div>
     </form>
@@ -62,13 +62,13 @@
         </button>
         <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
-            <a class="dropdown-item" href="{{ route('admin.profile') }}"><i class="align-middle ri-user-line me-1"></i> Profile</a>
-            <a class="dropdown-item" href="{{ route('change.password') }}"><i class="align-middle ri-wallet-2-line me-1"></i> Change Password</a>
-            <a class="dropdown-item d-block" href="#"><span class="mt-1 badge bg-success float-end">11</span><i class="align-middle ri-settings-2-line me-1"></i> Settings</a>
-            <a class="dropdown-item" href="#"><i class="align-middle ri-lock-unlock-line me-1"></i> Lock screen</a>
+            <a class="dropdown-item" href="{{ route('admin.profile') }}"><i class="align-middle ri-user-line me-1"></i> প্রফাইল</a>
+            <a class="dropdown-item" href="{{ route('change.password') }}"><i class="align-middle ri-wallet-2-line me-1"></i> পাসওয়ার্ড পরিবর্তন</a>
+            {{-- <a class="dropdown-item d-block" href="#"><span class="mt-1 badge bg-success float-end">11</span><i class="align-middle ri-settings-2-line me-1"></i> Settings</a>
+            <a class="dropdown-item" href="#"><i class="align-middle ri-lock-unlock-line me-1"></i> Lock screen</a> --}}
             <div class="dropdown-divider"></div>
 
-            <a class="dropdown-item text-danger" href="{{ route('admin.logout') }}"><i class="align-middle ri-shut-down-line me-1 text-danger"></i> Logout</a>
+            <a class="dropdown-item text-danger" href="{{ route('admin.logout') }}"><i class="align-middle ri-shut-down-line me-1 text-danger"></i> লগআউট</a>
         </div>
     </div>
 

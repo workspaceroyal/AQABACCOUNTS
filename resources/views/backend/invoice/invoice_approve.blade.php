@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Expense Approve</h4>
+                                    <h4 class="mb-sm-0">খরচ এপ্রুভ</h4>
 
 
 
@@ -24,21 +24,21 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-<h4>Expense No: #{{ $invoice->invoice_no }} - {{ date('d-m-Y',strtotime($invoice->date)) }} </h4>
-    <a href="{{ route('invoice.pending.list') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-list"> Pending Expense List </i></a> <br>  <br>
+<h4>খরচ নং: #{{ $invoice->invoice_no }} - {{ date('d-m-Y',strtotime($invoice->date)) }} </h4>
+    <a href="{{ route('invoice.pending.list') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-list"> পেন্ডিং খরচের তালিকা </i></a> <br>  <br>
 
      <table class="table table-dark" width="100%">
         <tbody>
             <tr>
-                <td><p> Expense Sector Info </p></td>
-                <td><p> Name: <strong> {{ $payment['customer']['name']  }} </strong> </p></td>
-                <td><p> Mobile: <strong> {{ $payment['customer']['mobile_no']  }} </strong> </p></td>
-               <td><p> Email: <strong> {{ $payment['customer']['email']  }} </strong> </p></td>
+                <td><p> ব্যয়ের খাতের তথ্য </p></td>
+                <td><p> নাম: <strong> {{ $payment['customer']['name']  }} </strong> </p></td>
+                <td><p> মোবাইল: <strong> {{ $payment['customer']['mobile_no']  }} </strong> </p></td>
+               <td><p> ইমাইল: <strong> {{ $payment['customer']['email']  }} </strong> </p></td>
             </tr>
 
              <tr>
              <td></td>
-              <td colspan="3"><p> Description : <strong> {{ $invoice->description  }} </strong> </p></td>
+              <td colspan="3"><p> বিবরণ : <strong> {{ $invoice->description  }} </strong> </p></td>
              </tr>
         </tbody>
 
@@ -50,13 +50,13 @@
          <table border="1" class="table table-dark" width="100%">
             <thead>
                 <tr>
-                    <th class="text-center">Sl</th>
-                    <th class="text-center">Fund Sector</th>
-                    <th class="text-center">Month & Year</th>
-                    <th class="text-center" style="background-color: #8B008B">Current Fund</th>
-                    <th class="text-center">Amount</th>
-                    <th class="text-center">Recurrent</th>
-                    <th class="text-center">Total Amount</th>
+                    <th class="text-center">নং</th>
+                    <th class="text-center">অর্থের খাত</th>
+                    <th class="text-center">মাস ও সন</th>
+                    <th class="text-center" style="background-color: #8B008B">বর্তমান তহবিল</th>
+                    <th class="text-center">পরিমাণ</th>
+                    <th class="text-center">পুনরাবৃত্তি</th>
+                    <th class="text-center">মোট পরিমাণ</th>
                 </tr>
 
             </thead>
@@ -84,7 +84,7 @@
         @endphp
         @endforeach
         <tr>
-            <td colspan="6"> Sub Total </td>
+            <td colspan="6"> মোট </td>
              <td > ৳ {{ $total_sum }} </td>
         </tr>
          {{-- <tr>
@@ -93,24 +93,24 @@
         </tr> --}}
 
          <tr>
-            <td colspan="6"> Payable Amount </td>
+            <td colspan="6"> পরিশোধনীয় পরিমাণ </td>
              <td > ৳ {{ $payment->paid_amount }} </td>
         </tr>
 
          <tr>
-            <td colspan="6"> Advance Amount </td>
+            <td colspan="6"> অগ্রিম পরিমাণ </td>
              <td > ৳ {{ $payment->due_amount }} </td>
         </tr>
 
         <tr>
-            <td colspan="6"> Grand Amount </td>
+            <td colspan="6"> সর্বমোট </td>
              <td > ৳ {{ $payment->total_amount }}</td>
         </tr>
     </tbody>
 
          </table>
 
-         <button type="submit" class="btn btn-info">Expense Approve </button>
+         <button type="submit" class="btn btn-info">খরচ এপ্রুভ </button>
 
      </form>
 

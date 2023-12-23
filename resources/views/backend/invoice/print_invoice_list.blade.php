@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Print All Expense</h4>
+                                    <h4 class="mb-sm-0">সকল খরচ প্রিন্ট করুন</h4>
 
 
 
@@ -23,21 +23,21 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('invoice.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> Add Expense </i></a> <br>  <br>
+    <a href="{{ route('invoice.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> খরচ যুক্ত করুন </i></a> <br>  <br>
 
-                    <h4 class="card-title">Expense All Data </h4>
+                    <h4 class="card-title">খরচের সকল ডাটা </h4>
 
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Expense Sector</th>
-                            <th>Expense No </th>
-                            <th>Date </th>
-                            <th>Desctipion</th>
-                            <th>Amount</th>
-                             <th>Action</th>
+                            <th>নং</th>
+                            <th>খরচের খাত</th>
+                            <th>খরচ নং </th>
+                            <th>তারিখ </th>
+                            <th>বিবরণ</th>
+                            <th>পরিমাণ</th>
+                             <th>একশন</th>
 
                         </thead>
 
@@ -57,7 +57,7 @@
                 <td>  ৳ {{ $item['payment']['total_amount'] }} </td>
 
                 <td>
-     <a href="{{ route('print.invoice',$item->id) }}" class="btn btn-danger sm" title="Print Expense" >  <i class="fa fa-print"></i> </a>
+     <a href="{{ route('print.invoice',$item->id) }}" class="btn btn-danger sm" title="খরচ প্রিন্ট করুন" >  <i class="fa fa-print"></i> </a>
                 </td>
 
             </tr>

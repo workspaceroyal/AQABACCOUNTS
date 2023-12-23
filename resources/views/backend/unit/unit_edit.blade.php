@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Edit Currency</h4><br><br>
+            <h4 class="card-title">মুদ্রা এডিট করুন</h4><br><br>
 
 
 
@@ -19,7 +19,7 @@
 
             <input type="hidden" name="id" value="{{ $unit->id }}">
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Currency Name </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">মুদ্রা নাম </label>
                 <div class="form-group col-sm-10">
                     <input name="name" value="{{ $unit->name }}" class="form-control" type="text"    >
                 </div>
@@ -27,7 +27,7 @@
             <!-- end row -->
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Update Currency">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="আপডেট করুন">
             </form>
 
 

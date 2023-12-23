@@ -35,7 +35,7 @@ class SupplierController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Funding Source Inserted Successfully',
+            'message' => 'আয়ের উৎস সফল ভাবে ইনসার্ট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -66,7 +66,7 @@ class SupplierController extends Controller
         ]);
 
          $notification = array(
-            'message' => 'Funding Source Updated Successfully',
+            'message' => 'আয়ের উৎস সফল ভাবে আপডেট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -80,7 +80,7 @@ class SupplierController extends Controller
       Supplier::findOrFail($id)->delete();
 
        $notification = array(
-            'message' => 'Funding Source Deleted Successfully',
+            'message' => 'আয়ের উৎস সফল ভাবে ্ডিলেট হয়েছে',
             'alert-type' => 'success'
         );
 

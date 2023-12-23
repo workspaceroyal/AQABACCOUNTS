@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Funding Source & Sector Wise Report</h4>
+                                    <h4 class="mb-sm-0">আয়ের উৎস ও অর্থের খাত ভিত্তিক রিপোর্ট</h4>
 
 
 
@@ -26,11 +26,11 @@
 
     <div class="row">
         <div class="text-center col-md-12">
-            <strong> Funding Source Wise Report </strong>
+            <strong> আয়ের উৎস ভিত্তিক রিপোর্ট </strong>
             <input type="radio" name="supplier_product_wise" value="supplier_wise" class="search_value"> &nbsp;&nbsp;
 
 
-            <strong> Fund Sector Wise Report </strong>
+            <strong> অর্থের খাত ভিত্তিক রিপোর্ট </strong>
             <input type="radio" name="supplier_product_wise" value="product_wise" class="search_value">
 
 
@@ -43,9 +43,9 @@
 
             <div class="row">
                 <div class="col-sm-8 form-group">
-                    <label>Funding Source</label>
+                    <label>আয়ের উৎস</label>
               <select name="supplier_id" class="form-select select2"  >
-                <option value="">Select Funding Source</option>
+                <option value="">সিলেক্ট করুন</option>
                 @foreach($supppliers as $supp)
                 <option value="{{ $supp->id }}">{{ $supp->name }}</option>
                @endforeach
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="col-sm-4" style="padding-top: 28px;">
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" class="btn btn-primary">সার্চ</button>
                 </div>
 
             </div>
@@ -71,9 +71,9 @@
 
                <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Fund Sector</label>
+                <label for="example-text-input" class="form-label">অর্থের খাত</label>
                 <select name="category_id" id="category_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">সিলেক্ট করুন</option>
                   @foreach($category as $cat)
                 <option value="{{ $cat->id }}">{{ $cat->name }}</option>
                @endforeach
@@ -84,16 +84,16 @@
 
          <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Month & Year</label>
+                <label for="example-text-input" class="form-label">মাস ও সন</label>
                 <select name="product_id" id="product_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">সিলেক্ট করুন</option>
 
                 </select>
             </div>
         </div>
 
                 <div class="col-sm-4" style="padding-top: 28px;">
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" class="btn btn-primary">সার্চ</button>
                 </div>
 
             </div>

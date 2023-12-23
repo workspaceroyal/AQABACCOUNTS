@@ -10,14 +10,14 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Add Expense </h4><br><br>
+            <h4 class="card-title">খরচ যুক্ত করুন </h4><br><br>
 
 
     <div class="row">
 
          <div class="col-md-1">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Exp No</label>
+                <label for="example-text-input" class="form-label">খরচ নং</label>
                  <input class="form-control example-date-input" name="invoice_no" type="text" value="{{ $invoice_no }}"  id="invoice_no" readonly style="background-color:#ddd" >
             </div>
         </div>
@@ -25,7 +25,7 @@
 
         <div class="col-md-2">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Date</label>
+                <label for="example-text-input" class="form-label">তারিখ</label>
                  <input class="form-control example-date-input" value="{{ $date }}" name="date" type="date"  id="date">
             </div>
         </div>
@@ -33,9 +33,9 @@
 
        <div class="col-md-3">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Fund Sector</label>
+                <label for="example-text-input" class="form-label">অর্থের উৎস</label>
                 <select name="category_id" id="category_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন </option>
                   @foreach($category as $cat)
                 <option value="{{ $cat->id }}">{{ $cat->name }}</option>
                @endforeach
@@ -46,9 +46,9 @@
 
          <div class="col-md-3">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Month & Year</label>
+                <label for="example-text-input" class="form-label">মাস ও সন</label>
                 <select name="product_id" id="product_id" class="form-select select2" aria-label="Default select example">
-                <option selected="">Open this select menu</option>
+                <option selected="">একটি সিলেক্ট করুন</option>
 
                 </select>
             </div>
@@ -57,7 +57,7 @@
 
            <div class="col-md-1">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">Fund(Amount)</label>
+                <label for="example-text-input" class="form-label">তহবিল(পরিমাণ)</label>
                  <input class="form-control example-date-input" name="current_stock_qty" type="text"  id="current_stock_qty" readonly style="background-color:#ddd" >
             </div>
         </div>
@@ -68,7 +68,7 @@
         <label for="example-text-input" class="form-label" style="margin-top:43px;">  </label>
 
 
-        <i class="btn btn-secondary btn-rounded waves-effect waves-light fas fa-plus-circle addeventmore"> Add More</i>
+        <i class="btn btn-secondary btn-rounded waves-effect waves-light fas fa-plus-circle addeventmore"> যুক্ত করুন</i>
     </div>
 </div>
 
@@ -87,12 +87,12 @@
             <table class="table-sm table-bordered" width="100%" style="border-color: #ddd;">
                 <thead>
                     <tr>
-                        <th>Fund Sector</th>
-                        <th>Month & Year</th>
-                        <th width="7%">Amount</th>
-                        <th width="10%">Recurrent</th>
-                        <th width="15%">Total Amount</th>
-                        <th width="7%">Action</th>
+                        <th>অর্থের উৎস</th>
+                        <th>মাস ও সন</th>
+                        <th width="7%">পরিমাণ</th>
+                        <th width="10%">পুনরাবৃত্তি</th>
+                        <th width="15%">মোট পরিমাণ</th>
+                        <th width="7%">একশন</th>
 
                     </tr>
                 </thead>
@@ -115,7 +115,7 @@
 
 
                     <tr>
-                        <td colspan="4"> Grand Total</td>
+                        <td colspan="4"> সর্বমোট</td>
                         <td>
                             <input type="text" name="estimated_amount" value="0" id="estimated_amount" class="form-control estimated_amount" readonly style="background-color: #ddd;" >
                         </td>
@@ -134,12 +134,12 @@
 
             <div class="row">
                 <div class="form-group col-md-3">
-                    <label> Payable Status </label>
+                    <label> পরিশোধনীয় পরিস্থিতি </label>
                     <select name="paid_status" id="paid_status" class="form-select">
-                        <option value="">Select Status </option>
-                        <option value="full_paid">Full Payable </option>
-                        <option value="full_due">Full Advance </option>
-                         <option value="partial_paid">Partial Payable </option>
+                        <option value="">সিলেক্ট করুন </option>
+                        <option value="full_paid">সম্পুর্ণ পরিশোধনীয় </option>
+                        <option value="full_due">সম্পুর্ণ অগ্রিম </option>
+                         <option value="partial_paid">আংশিক পরিশোধনীয় </option>
 
                     </select>
         <input type="text" name="paid_amount" class="form-control paid_amount" placeholder="Enter Paid Amount" style="display:none;">
@@ -147,13 +147,13 @@
 
 
             <div class="form-group col-md-9">
-                <label> Expense Sector Name  </label>
+                <label> ব্যয়ের খাত  </label>
                     <select name="customer_id" id="customer_id" class="form-select">
-                        <option value="">Select Expense Sector </option>
+                        <option value="">ব্যয়ের খাত সিলেক্ট করুন </option>
                         @foreach($costomer as $cust)
                         <option value="{{ $cust->id }}">{{ $cust->name }} - {{ $cust->mobile_no }}</option>
                         @endforeach
-                         <option value="0">New Expense Sector</option>
+                         <option value="0">নতুন ব্যয়ের খাত</option>
                     </select>
             </div>
             </div> <!-- // end row --> <br>
@@ -176,7 +176,7 @@
 
  <br>
             <div class="form-group">
-                <button type="submit" class="btn btn-info" id="storeButton"> Expense Store</button>
+                <button type="submit" class="btn btn-info" id="storeButton"> সংরক্ষণ করুন</button>
 
             </div>
 

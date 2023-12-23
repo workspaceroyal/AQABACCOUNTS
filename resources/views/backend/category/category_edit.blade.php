@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Edit Fund Sector </h4><br><br>
+            <h4 class="card-title">অর্থের খাত এডিট</h4><br><br>
 
 
 
@@ -18,8 +18,8 @@
                 @csrf
 
             <input type="hidden" name="id" value="{{ $category->id }}">
-            <div class="row mb-3">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Fund Sector Name </label>
+            <div class="mb-3 row">
+                <label for="example-text-input" class="col-sm-2 col-form-label">নাম </label>
                 <div class="form-group col-sm-10">
                     <input name="name" value="{{ $category->name }}" class="form-control" type="text"    >
                 </div>
@@ -27,7 +27,7 @@
             <!-- end row -->
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Update Fund Sector">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="আপডেট করুন">
             </form>
 
 
@@ -53,7 +53,7 @@
             },
             messages :{
                 name: {
-                    required : 'Please Enter Your Name',
+                    required : 'নাম যুক্ত করুন',
                 },
 
             },
