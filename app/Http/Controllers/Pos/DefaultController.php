@@ -20,14 +20,14 @@ class DefaultController extends Controller
         // dd($supplier_id);
         $allCategory = Product::with(['category'])->select('category_id')->where('supplier_id',$supplier_id)->groupBy('category_id')->get();
         return response()->json($allCategory);
-    } // End Mehtod 
+    } // End Mehtod
 
      public function GetProduct(Request $request){
 
-        $category_id = $request->category_id; 
+        $category_id = $request->category_id;
         $allProduct = Product::where('category_id',$category_id)->get();
         return response()->json($allProduct);
-    } // End Mehtod 
+    } // End Mehtod
 
 
     public function GetStock(Request $request){
@@ -35,7 +35,7 @@ class DefaultController extends Controller
         $stock = Product::where('id',$product_id)->first()->quantity;
         return response()->json($stock);
 
-    } // End Mehtod 
+    } // End Mehtod
 
 
 
@@ -43,4 +43,3 @@ class DefaultController extends Controller
 
 
 }
- 

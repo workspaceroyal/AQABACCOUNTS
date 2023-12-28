@@ -134,6 +134,126 @@ class PurchaseController extends Controller
     }// End Method
 
 
+    public function UserPurchaseAll(){
+
+        $allData = Purchase::orderBy('date','desc')->orderBy('id','desc')->get();
+        return view('userbackend.purchase.purchase_all',compact('allData'));
+
+    } // End Method
+
+
+    public function UserPurchaseAdd(){
+
+        $supplier = Supplier::all();
+        $unit = Unit::all();
+        $category = Category::all();
+        return view('userbackend.purchase.purchase_add',compact('supplier','unit','category'));
+
+    } // End Method
+
+
+    public function UserPurchaseStore(Request $request){
+
+    if ($request->category_id == null) {
+
+       $notification = array(
+        'message' => 'দুঃখিত আপনি কোন আই্টেম সিলেক্ট করেননি',
+        'alert-type' => 'error'
+    );
+    return redirect()->back( )->with($notification);
+    } else {
+
+        $count_category = count($request->category_id);
+        for ($i=0; $i < $count_category; $i++) {
+            $purchase = new Purchase();
+            $purchase->date = date('Y-m-d', strtotime($request->date[$i]));
+            $purchase->purchase_no = $request->purchase_no[$i];
+            $purchase->supplier_id = $request->supplier_id[$i];
+            $purchase->category_id = $request->category_id[$i];
+
+            $purchase->product_id = $request->product_id[$i];
+            $purchase->buying_qty = $request->buying_qty[$i];
+            $purchase->unit_price = $request->unit_price[$i];
+            $purchase->buying_price = $request->buying_price[$i];
+            $purchase->description = $request->description[$i];
+
+            $purchase->created_by = Auth::user()->id;
+            $purchase->status = '0';
+            $purchase->save();
+        } // end foreach
+    } // end else
+
+    $notification = array(
+        'message' => 'ডাটা সফল ভাবে সেইভ হয়েছে',
+        'alert-type' => 'success'
+    );
+    return redirect()->route('purchase.all')->with($notification);
+    } // End Method
+
+
+    public function UserPurchaseDelete($id){
+
+        Purchase::findOrFail($id)->delete();
+
+         $notification = array(
+        'message' => 'জমা আইটেম সফল ভাবে ডিলেট হয়েছে',
+        'alert-type' => 'success'
+    );
+    return redirect()->back()->with($notification);
+
+    } // End Method
+
+
+    public function UserPurchasePending(){
+
+        $allData = Purchase::orderBy('date','desc')->orderBy('id','desc')->where('status','0')->get();
+        return view('userbackend.purchase.purchase_pending',compact('allData'));
+    }// End Method
+
+
+    public function UserPurchaseApprove($id){
+
+        $purchase = Purchase::findOrFail($id);
+        $product = Product::where('id',$purchase->product_id)->first();
+        $purchase_qty = ((float)($purchase->buying_qty))+((float)($product->quantity));
+        $product->quantity = $purchase_qty;
+
+        if($product->save()){
+
+            Purchase::findOrFail($id)->update([
+                'status' => '1',
+            ]);
+
+             $notification = array(
+        'message' => 'অবস্থা সফল ভাবে এপ্রুভ হয়েছে',
+        'alert-type' => 'success'
+          );
+    return redirect()->route('purchase.all')->with($notification);
+
+        }
+
+    }// End Method
+
+
+    public function UserDailyPurchaseReport(){
+        return view('userbackend.purchase.daily_purchase_report');
+    }// End Method
+
+
+    public function UserDailyPurchasePdf(Request $request){
+
+        $sdate = date('Y-m-d',strtotime($request->start_date));
+        $edate = date('Y-m-d',strtotime($request->end_date));
+        $allData = Purchase::whereBetween('date',[$sdate,$edate])->where('status','1')->get();
+
+
+        $start_date = date('Y-m-d',strtotime($request->start_date));
+        $end_date = date('Y-m-d',strtotime($request->end_date));
+        return view('userbackend.pdf.daily_purchase_report_pdf',compact('allData','start_date','end_date'));
+
+    }// End Method
+
+
 
 
 }

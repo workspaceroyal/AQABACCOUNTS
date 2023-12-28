@@ -10,7 +10,7 @@ use App\Models\Supplier;
 use App\Models\Unit;
 use Auth;
 use Illuminate\Support\Carbon;
- 
+
 class StockController extends Controller
 {
     public function StockReport(){
@@ -54,5 +54,45 @@ class StockController extends Controller
 
 
 
+    public function UserStockReport(){
+
+        $allData = Product::orderBy('supplier_id','asc')->orderBy('category_id','asc')->get();
+        return view('userbackend.stock.stock_report',compact('allData'));
+
+    } // End Method
+
+
+    public function UserStockReportPdf(){
+
+        $allData = Product::orderBy('supplier_id','asc')->orderBy('category_id','asc')->get();
+        return view('userbackend.pdf.stock_report_pdf',compact('allData'));
+
+    } // End Method
+
+
+    public function UserStockSupplierWise(){
+
+        $supppliers = Supplier::all();
+        $category = Category::all();
+        return view('userbackend.stock.supplier_product_wise_report',compact('supppliers','category'));
+
+    } // End Method
+
+
+    public function UserSupplierWisePdf(Request $request){
+
+        $allData = Product::orderBy('supplier_id','asc')->orderBy('category_id','asc')->where('supplier_id',$request->supplier_id)->get();
+        return view('userbackend.pdf.supplier_wise_report_pdf',compact('allData'));
+
+    } // End Method
+
+
+    public function UserProductWisePdf(Request $request){
+
+        $product = Product::where('category_id',$request->category_id)->where('id',$request->product_id)->first();
+        return view('userbackend.pdf.product_wise_report_pdf',compact('product'));
+    } // End Method
+
+
+
 }
- 

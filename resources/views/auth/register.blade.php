@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Register | Admin </title>
+        <title>রেজিস্টার | ইউজার </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
@@ -36,7 +36,7 @@
                             </div>
                         </div>
 
-                        <h4 class="text-center text-muted font-size-18"><b>Register</b></h4>
+                        <h4 class="text-center text-muted font-size-18"><b>রেজিস্টার</b></h4>
 
                         <div class="p-3">
 
@@ -98,13 +98,13 @@
 
     <div class="pt-1 mt-3 text-center form-group row">
         <div class="col-12">
-            <button class="btn btn-info w-100 waves-effect waves-light" type="submit">Register</button>
+            <button class="btn btn-info w-100 waves-effect waves-light" type="submit">রেজিস্টার</button>
         </div>
     </div>
 
     <div class="mt-2 mb-0 form-group row">
         <div class="mt-3 text-center col-12">
-            <a href="{{ route('login') }}" class="text-muted">Already have account?</a>
+            <a href="{{ route('login') }}" class="text-muted">একতা একাউন্টা আছে?</a>
         </div>
     </div>
 </form>

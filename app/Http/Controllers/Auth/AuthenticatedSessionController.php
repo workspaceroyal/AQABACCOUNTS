@@ -32,12 +32,23 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        $url = '';
+        if($request->user()->role === 'admin'){
+            $url = '/admin/dashboard';
+        }
+        elseif($request->user()->role === 'editor'){
+            $url = '/editor/dashboard';
+        }
+        elseif($request->user()->role === 'user'){
+            $url = '/user/dashboard';
+        }
+
         $notification = array(
             'message' => 'সফল ভাবে লগইন হয়েছে',
             'alert-type' => 'success'
         );
 
-        return redirect()->intended(RouteServiceProvider::HOME)->with($notification);
+        return redirect()->intended($url)->with($notification);
     }
 
     /**
