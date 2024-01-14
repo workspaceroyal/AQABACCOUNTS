@@ -2,7 +2,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6">
-                                 AQAB © aqab@gmail.com.com.
+                                 AQAB © alquranacademybangladesh@gmail.com 
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-sm-end d-none d-sm-block">

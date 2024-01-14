@@ -279,7 +279,7 @@ class CustomerController extends Controller
            'alert-type' => 'success'
        );
 
-       return redirect()->route('customer.all')->with($notification);
+       return redirect()->route('user.customer.all')->with($notification);
 
    } // End Method
 
@@ -318,7 +318,7 @@ class CustomerController extends Controller
            'alert-type' => 'success'
        );
 
-       return redirect()->route('customer.all')->with($notification);
+       return redirect()->route('user.customer.all')->with($notification);
 
        } else{
 
@@ -337,7 +337,7 @@ class CustomerController extends Controller
            'alert-type' => 'success'
        );
 
-       return redirect()->route('customer.all')->with($notification);
+       return redirect()->route('user.customer.all')->with($notification);
 
        } // end else
 

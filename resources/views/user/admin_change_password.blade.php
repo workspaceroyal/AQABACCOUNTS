@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Change Password Page </h4><br><br>
+            <h4 class="card-title">পাসওয়ার্ড পরিবর্তন পৃষ্ঠা </h4><br><br>
 
 
             @if(count($errors))
@@ -21,11 +21,11 @@
             @endif
 
 
-            <form method="post" action="{{ route('update.password') }}" >
+            <form method="post" action="{{ route('user.update.password') }}" >
                 @csrf
 
-            <div class="row mb-3">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Old Password</label>
+            <div class="mb-3 row">
+                <label for="example-text-input" class="col-sm-2 col-form-label">পুরাতন পাসওয়ার্ড</label>
                 <div class="col-sm-10">
                     <input name="oldpassword" class="form-control" type="password"   id="oldpassword">
                 </div>
@@ -33,8 +33,8 @@
             <!-- end row -->
 
 
-             <div class="row mb-3">
-                <label for="example-text-input" class="col-sm-2 col-form-label">New Password</label>
+             <div class="mb-3 row">
+                <label for="example-text-input" class="col-sm-2 col-form-label">নতুন পাসওয়ার্ড</label>
                 <div class="col-sm-10">
                 <input name="newpassword" class="form-control" type="password"  id="newpassword">
                 </div>
@@ -43,8 +43,8 @@
 
 
 
-             <div class="row mb-3">
-                <label for="example-text-input" class="col-sm-2 col-form-label">Confirm Password</label>
+             <div class="mb-3 row">
+                <label for="example-text-input" class="col-sm-2 col-form-label">পাসওয়ার্ড পুনরায় দিন</label>
                 <div class="col-sm-10">
                     <input name="confirm_password" class="form-control" type="password"   id="confirm_password">
                 </div>
@@ -54,7 +54,7 @@
 
 
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Change Password">
+<input type="submit" class="btn btn-info waves-effect waves-light" value="পরিবর্তন করুন">
             </form>
 
 

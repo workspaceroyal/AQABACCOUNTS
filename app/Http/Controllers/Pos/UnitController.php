@@ -113,7 +113,7 @@ class UnitController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('unit.all')->with($notification);
+        return redirect()->route('user.unit.all')->with($notification);
 
     } // End Method
 
@@ -142,7 +142,7 @@ class UnitController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('unit.all')->with($notification);
+        return redirect()->route('user.unit.all')->with($notification);
 
     }// End Method
 

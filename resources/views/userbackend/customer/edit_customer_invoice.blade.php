@@ -79,7 +79,7 @@
    <div class="row">
         <div class="col-12">
 
-   <form method="post" action="{{ route('customer.update.invoice',$payment->invoice_id)}}">
+   <form method="post" action="{{ route('user.customer.update.invoice',$payment->invoice_id)}}">
           @csrf
 
             <div>

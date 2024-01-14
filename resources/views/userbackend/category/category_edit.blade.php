@@ -14,7 +14,7 @@
 
 
 
-            <form method="post" action="{{ route('category.update') }}" id="myForm" >
+            <form method="post" action="{{ route('unit.category.update') }}" id="myForm" >
                 @csrf
 
             <input type="hidden" name="id" value="{{ $category->id }}">

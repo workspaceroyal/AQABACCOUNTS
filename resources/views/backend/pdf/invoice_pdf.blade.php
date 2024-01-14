@@ -72,7 +72,7 @@
         <tr>
             <td><strong>ব্যয়ের খাত</strong></td>
             <td class="text-center"><strong>মোবাইল</strong></td>
-            <td class="text-center"><strong>ঠিকানা</strong>
+            <td class="text-center"><strong>ইমেইল</strong>
             </td>
             <td class="text-center"><strong>বিবরণ</strong>
             </td>
@@ -209,7 +209,7 @@
 
                     <div class="d-print-none">
                         <div class="float-end">
-                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট /্ডাউনলোড</i></a>
+                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট/ডাউনলোড</i></a>
                             {{-- <a href="javascript:window.print()" class="btn btn-primary waves-effect waves-light ms-2">Download</a> --}}
                         </div>
                     </div>

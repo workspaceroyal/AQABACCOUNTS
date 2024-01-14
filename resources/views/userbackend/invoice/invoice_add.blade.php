@@ -82,7 +82,7 @@
 <!--  ---------------------------------- -->
 
         <div class="card-body">
-        <form method="post" action="{{ route('invoice.store') }}">
+        <form method="post" action="{{ route('user.invoice.store') }}">
             @csrf
             <table class="table-sm table-bordered" width="100%" style="border-color: #ddd;">
                 <thead>
@@ -128,7 +128,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <textarea name="description" class="form-control" id="description" placeholder="Write Description Here"></textarea>
+                    <textarea name="description" class="form-control" id="description" placeholder="এখানে বিবরণ লিখুন"></textarea>
                 </div>
             </div><br>
 
@@ -142,7 +142,7 @@
                          <option value="partial_paid">আংশিক পরিশোধনীয় </option>
 
                     </select>
-        <input type="text" name="paid_amount" class="form-control paid_amount" placeholder="Enter Paid Amount" style="display:none;">
+        <input type="text" name="paid_amount" class="form-control paid_amount" placeholder="নগদ পরিমাণ লিখুন" style="display:none;">
                 </div>
 
 
@@ -161,15 +161,15 @@
 <!-- Hide Add Customer Form -->
 <div class="row new_customer" style="display:none">
     <div class="form-group col-md-4">
-        <input type="text" name="name" id="name" class="form-control" placeholder="Write Expense Sector Name">
+        <input type="text" name="name" id="name" class="form-control" placeholder="ব্যায়ের খাতের নাম লিখুন">
     </div>
 
     <div class="form-group col-md-4">
-        <input type="text" name="mobile_no" id="mobile_no" class="form-control" placeholder="Write Expense Sector Mobile No">
+        <input type="text" name="mobile_no" id="mobile_no" class="form-control" placeholder="ব্যায়ের খাতের ্মোবাইল নাম্বার লিখুন">
     </div>
 
     <div class="form-group col-md-4">
-        <input type="email" name="email" id="email" class="form-control" placeholder="Write Expense Sector Email">
+        <input type="email" name="email" id="email" class="form-control" placeholder="ব্যায়ের খাতের ইমেইল লিখুন">
     </div>
 </div>
 <!-- End Hide Add Customer Form -->

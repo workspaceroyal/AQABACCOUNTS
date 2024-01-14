@@ -138,7 +138,7 @@ class ProductController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('product.all')->with($notification);
+        return redirect()->route('user.product.all')->with($notification);
 
     } // End Method
 
@@ -174,7 +174,7 @@ class ProductController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('product.all')->with($notification);
+        return redirect()->route('user.product.all')->with($notification);
 
 
     } // End Method

@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('supplier.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> আয়ের উৎস যুক্ত করুন</i></a> <br>  <br>
+    <a href="{{ route('user.supplier.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> আয়ের উৎস যুক্ত করুন</i></a> <br>  <br>
 
                     <h4 class="card-title">আয়ের উৎস সকল ডাটা</h4>
 
@@ -51,9 +51,9 @@
                               <td> {{ $item->email }} </td>
                                <td> {{ $item->address }} </td>
                             <td>
-   <a href="{{ route('supplier.edit',$item->id) }}" class="btn btn-info sm" title="Edit Data">  <i class="fas fa-edit"></i> </a>
+   <a href="{{ route('user.supplier.edit',$item->id) }}" class="btn btn-info sm" title="Edit Data">  <i class="fas fa-edit"></i> </a>
 
-     <a href="{{ route('supplier.delete',$item->id) }}" class="btn btn-danger sm" title="Delete Data" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+     <a href="{{ route('user.supplier.delete',$item->id) }}" class="btn btn-danger sm" title="Delete Data" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 
                             </td>
 

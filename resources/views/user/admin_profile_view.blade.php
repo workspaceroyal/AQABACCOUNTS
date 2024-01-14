@@ -13,13 +13,13 @@
 </center>
 
             <div class="card-body">
-                <h4 class="card-title">Name : {{ $adminData->name }} </h4>
+                <h4 class="card-title">নাম : {{ $adminData->name }} </h4>
                 <hr>
-                <h4 class="card-title">User Email : {{ $adminData->email }} </h4>
+                <h4 class="card-title">ইমেইল : {{ $adminData->email }} </h4>
                 <hr>
-                <h4 class="card-title">User Name : {{ $adminData->username }} </h4>
+                <h4 class="card-title">ইজার নেম : {{ $adminData->username }} </h4>
                 <hr>
-                <a href="{{ route('edit.profile') }}" class="btn btn-info btn-rounded waves-effect waves-light" > Edit Profile</a>
+                <a href="{{ route('user.edit.profile') }}" class="btn btn-info btn-rounded waves-effect waves-light" > এডিট প্রফাইল</a>
 
             </div>
         </div>

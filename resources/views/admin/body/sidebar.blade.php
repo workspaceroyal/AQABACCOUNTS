@@ -33,7 +33,7 @@
                             <li class="menu-title">মেনু</li>
 
                             <li>
-                                <a href="{{ url('/dashboard') }}" class="waves-effect">
+                                <a href="{{ url('/admin/dashboard') }}" class="waves-effect">
                                     <i class="ri-home-fill"></i>
                                     <span>ড্যাশবোর্ড</span>
                                 </a>

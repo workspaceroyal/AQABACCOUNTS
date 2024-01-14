@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('purchase.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> নতুন জমা </i></a> <br>  <br>
+    <a href="{{ route('user.purchase.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> নতুন জমা </i></a> <br>  <br>
 
                     <h4 class="card-title">জমা সকল ডাটা </h4>
 
@@ -66,7 +66,7 @@
 
                 <td>
 @if($item->status == '0')
-<a href="{{ route('purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+<a href="{{ route('user.purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 @endif
                 </td>
 

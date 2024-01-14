@@ -33,7 +33,7 @@
                             <li class="menu-title">মেনু</li>
 
                             <li>
-                                <a href="{{ url('/dashboard') }}" class="waves-effect">
+                                <a href="{{ url('/user/dashboard') }}" class="waves-effect">
                                     <i class="ri-home-fill"></i>
                                     <span>ড্যাশবোর্ড</span>
                                 </a>
@@ -46,7 +46,7 @@
                 <span>আয়ের উৎস</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('supplier.all') }}">আয়ের সকল উৎস</a></li>
+                <li><a href="{{ route('user.supplier.all') }}">আয়ের সকল উৎস</a></li>
 
             </ul>
         </li>
@@ -58,11 +58,11 @@
                 <span>ব্যয়ের খাত</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('customer.all') }}">ব্যয়ের সকল খাত</a></li>
-                 <li><a href="{{ route('credit.customer') }}">অগ্রিম ব্যয়ের রিপোর্ট</a></li>
+                <li><a href="{{ route('user.customer.all') }}">ব্যয়ের সকল খাত</a></li>
+                 <li><a href="{{ route('user.credit.customer') }}">অগ্রিম ব্যয়ের রিপোর্ট</a></li>
 
-                 <li><a href="{{ route('paid.customer') }}">পরিশোধনীয় ব্যয়ের রিপোর্ট</a></li>
-                  <li><a href="{{ route('customer.wise.report') }}">খাত ভিত্তিক ব্যয়ের রিপোর্ট</a></li>
+                 <li><a href="{{ route('user.paid.customer') }}">পরিশোধনীয় ব্যয়ের রিপোর্ট</a></li>
+                  <li><a href="{{ route('user.customer.wise.report') }}">খাত ভিত্তিক ব্যয়ের রিপোর্ট</a></li>
 
             </ul>
         </li>
@@ -74,7 +74,7 @@
                 <span>মুদ্রা</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('unit.all') }}">মুদ্রা তালিকা</a></li>
+                <li><a href="{{ route('user.unit.all') }}">মুদ্রা তালিকা</a></li>
 
             </ul>
         </li>
@@ -85,7 +85,7 @@
                 <span>অর্থের খাত</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('category.all') }}">অর্থের সকল খাত</a></li>
+                <li><a href="{{ route('unit.category.all') }}">অর্থের সকল খাত</a></li>
 
             </ul>
         </li>
@@ -97,7 +97,7 @@
                 <span>মাস ও সন</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('product.all') }}">মাস ও সন তালিকা</a></li>
+                <li><a href="{{ route('user.product.all') }}">মাস ও সন তালিকা</a></li>
 
             </ul>
         </li>
@@ -109,9 +109,9 @@
                 <span>অর্থ জমা</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('purchase.all') }}">সকল জমা</a></li>
-                <li><a href="{{ route('purchase.pending') }}">জমা পেন্ডিং</a></li>
-                <li><a href="{{ route('daily.purchase.report') }}">প্রাত্যহিক জমা রিপোর্ট</a></li>
+                <li><a href="{{ route('user.purchase.all') }}">সকল জমা</a></li>
+                <li><a href="{{ route('user.purchase.pending') }}">জমা পেন্ডিং</a></li>
+                <li><a href="{{ route('user.daily.purchase.report') }}">প্রাত্যহিক জমা রিপোর্ট</a></li>
 
             </ul>
         </li>
@@ -123,10 +123,10 @@
                 <span>খরচ</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('invoice.all') }}">সকল খরচ</a></li>
-                <li><a href="{{ route('invoice.pending.list') }}">খরচ পেন্ডিং</a></li>
-                <li><a href="{{ route('print.invoice.list') }}">সকল খরচ প্রিন্ট</a></li>
-                  <li><a href="{{ route('daily.invoice.report') }}">প্রাত্যহিক খরচ রিপোর্ট</a></li>
+                <li><a href="{{ route('user.invoice.all') }}">সকল খরচ</a></li>
+                <li><a href="{{ route('user.invoice.pending.list') }}">খরচ পেন্ডিং</a></li>
+                <li><a href="{{ route('user.print.invoice.list') }}">সকল খরচ প্রিন্ট</a></li>
+                  <li><a href="{{ route('user.daily.invoice.report') }}">প্রাত্যহিক খরচ রিপোর্ট</a></li>
 
             </ul>
         </li>

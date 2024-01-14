@@ -242,7 +242,7 @@ $payment_details = App\Models\PaymentDetail::where('invoice_id',$payment->invoic
 
                     <div class="d-print-none">
                         <div class="float-end">
-                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট /্ডাউনলোড</i></a>
+                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট/ডাউনলোড</i></a>
                             {{-- <a href="javascript:window.print()" class="btn btn-primary waves-effect waves-light ms-2">Download</a> --}}
                         </div>
                     </div>

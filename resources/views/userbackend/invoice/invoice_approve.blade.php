@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="card-body">
 <h4>খরচ নং: #{{ $invoice->invoice_no }} - {{ date('d-m-Y',strtotime($invoice->date)) }} </h4>
-    <a href="{{ route('invoice.pending.list') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-list"> পেন্ডিং খরচের তালিকা </i></a> <br>  <br>
+    <a href="{{ route('user.invoice.pending.list') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-list"> পেন্ডিং খরচের তালিকা </i></a> <br>  <br>
 
      <table class="table table-dark" width="100%">
         <tbody>
@@ -45,7 +45,7 @@
      </table>
 
 
-     <form method="post" action="{{ route('approval.store',$invoice->id) }}">
+     <form method="post" action="{{ route('user.approval.store',$invoice->id) }}">
       @csrf
          <table border="1" class="table table-dark" width="100%">
             <thead>
