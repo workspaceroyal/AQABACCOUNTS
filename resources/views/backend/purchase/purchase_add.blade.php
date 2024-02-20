@@ -54,7 +54,7 @@
 
          <div class="col-md-4">
             <div class="md-3">
-                <label for="example-text-input" class="form-label">মাস ও সন</label>
+                <label for="example-text-input" class="form-label">তহবিল খাত</label>
                 <select name="product_id" id="product_id" class="form-select select2" aria-label="Default select example">
                 <option selected="">একটি সিলেক্ট করুন</option>
 
@@ -82,13 +82,13 @@
 <!--  ---------------------------------- -->
 
         <div class="card-body">
-        <form method="post" action="{{ route('purchase.store') }}">
+        <form method="post" action="{{ route('user.purchase.store') }}">
             @csrf
             <table class="table-sm table-bordered" width="100%" style="border-color: #ddd;">
                 <thead>
                     <tr>
                         <th>অর্থের উৎস</th>
-                        <th>মাস ও সন</th>
+                        <th>তহবিল খাত</th>
                         <th>পরিমাণ</th>
                         <th>পুনরাবৃত্তি</th>
                         <th>বিবরণ</th>

@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">মাস ও সন তালিকা</h4>
+                                    <h4 class="mb-sm-0">তহবিল খাত তালিকা</h4>
 
 
 
@@ -23,16 +23,16 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('user.product.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> মাস ও সন যুক্ত করুন </i></a> <br>  <br>
+    <a href="{{ route('user.product.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> তহবিল খাত যুক্ত করুন </i></a> <br>  <br>
 
-                    <h4 class="card-title">মাস ও সন সকল ডাটা </h4>
+                    <h4 class="card-title">তহবিল খাত সকল ডাটা </h4>
 
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
                             <th>নং</th>
-                            <th>মাস ও সন</th>
+                            <th>তহবিল খাত</th>
                             <th>আয়ের উৎস</th>
                             <th>মুদ্রা</th>
                             <th>অর্থের খাত</th>

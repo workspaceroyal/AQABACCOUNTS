@@ -86,15 +86,14 @@
     <table class="table">
         <thead>
         <tr>
-            <td><strong>নং </strong></td>
             <td class="text-center"><strong>জমা নং </strong></td>
             <td class="text-center"><strong>তারিখ  </strong>
             </td>
-            <td class="text-center"><strong>মাস ও সন</strong>
+            <td class="text-center"><strong>তহবিল খাত</strong>
             </td>
             <td class="text-center"><strong>পরিমাণ</strong>
             </td>
-            <td class="text-center"><strong>পুনরাবৃত্তি</strong>
+            <td class="text-center"><strong>বিবিরণ</strong>
             </td>
             <td class="text-center"><strong>মোট পরিমাণ </strong>
             </td>
@@ -110,12 +109,11 @@
         @endphp
         @foreach($allData as $key => $item)
         <tr>
-           <td class="text-center">{{ $key+1 }}</td>
             <td class="text-center">{{ $item->purchase_no }}</td>
             <td class="text-center">{{ date('d-m-Y',strtotime($item->date)) }}</td>
             <td class="text-center">{{ $item['product']['name'] }}</td>
             <td class="text-center">{{ $item->buying_qty }} {{ $item['product']['unit']['name'] }} </td>
-            <td class="text-center">{{ $item->unit_price }}</td>
+            <td class="text-center">{{ $item->description }}</td>
             <td class="text-center"> ৳ {{ $item->buying_price }}</td>
 
 
@@ -134,7 +132,7 @@
                 <td class="no-line"></td>
                 <td class="text-center no-line">
                     <strong>সর্বমোট</strong></td>
-                <td class="no-line text-end"><h4 class="m-0"> ৳ {{ $total_sum}}</h4></td>
+                <td class="text-center no-line"><h4 class="m-0"> ৳ {{ $total_sum}}</h4></td>
             </tr>
                             </tbody>
                         </table>

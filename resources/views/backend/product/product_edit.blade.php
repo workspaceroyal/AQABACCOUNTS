@@ -10,17 +10,17 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">মাস ও সন এডিট</h4><br><br>
+            <h4 class="card-title">তহবিল খাত এডিট</h4><br><br>
 
 
 
- <form method="post" action="{{ route('product.update') }}" id="myForm" >
+ <form method="post" action="{{ route('user.product.update') }}" id="myForm" >
                 @csrf
 
                 <input type="hidden" name="id" value="{{ $product->id }}">
 
             <div class="mb-3 row">
-                <label for="example-text-input" class="col-sm-2 col-form-label">মাস ও সন নাম </label>
+                <label for="example-text-input" class="col-sm-2 col-form-label">তহবিল খাত নাম </label>
                 <div class="form-group col-sm-10">
                     <input name="name" value="{{ $product->name }}" class="form-control" type="text"    >
                 </div>
@@ -104,7 +104,7 @@
             },
             messages :{
                 name: {
-                    required : 'মাস ও সন যুক্ত করুন',
+                    required : 'তহবিল খাত যুক্ত করুন',
                 },
                 supplier_id: {
                     required : 'আয়ের উৎস ্সিলেক্ট করুন',

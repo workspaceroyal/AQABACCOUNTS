@@ -14,7 +14,7 @@
 
 
 
-            <form method="post" action="{{ route('unit.update') }}" id="myForm" >
+            <form method="post" action="{{ route('user.unit.update') }}" id="myForm" >
                 @csrf
 
             <input type="hidden" name="id" value="{{ $unit->id }}">

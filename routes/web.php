@@ -275,15 +275,15 @@ Route::middleware('auth')->group(function(){
            });
 
            // Stock All Route
-           Route::controller(StockController::class)->group(function () {
-               Route::get('/user/fund/report', 'UserStockReport')->name('stock.report');
-               Route::get('/user/fund/report/pdf', 'UserStockReportPdf')->name('stock.report.pdf');
+        //    Route::controller(StockController::class)->group(function () {
+        //        Route::get('/user/fund/report', 'UserStockReport')->name('stock.report');
+        //        Route::get('/user/fund/report/pdf', 'UserStockReportPdf')->name('stock.report.pdf');
 
-               Route::get('/user/fund/fundingsource/wise', 'UserStockSupplierWise')->name('stock.supplier.wise');
-               Route::get('/user/fundingsource/wise/pdf', 'UserSupplierWisePdf')->name('supplier.wise.pdf');
-               Route::get('/user/monthyear/wise/pdf', 'UserProductWisePdf')->name('product.wise.pdf');
+        //        Route::get('/user/fund/fundingsource/wise', 'UserStockSupplierWise')->name('stock.supplier.wise');
+        //        Route::get('/user/fundingsource/wise/pdf', 'UserSupplierWisePdf')->name('supplier.wise.pdf');
+        //        Route::get('/user/monthyear/wise/pdf', 'UserProductWisePdf')->name('product.wise.pdf');
 
-           });
+        //    });
 
         }); // End User Middleware
 

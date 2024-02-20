@@ -1,7 +1,6 @@
 @extends('admin.admin_master')
 @section('admin')
 
-
  <div class="page-content">
                     <div class="container-fluid">
 
@@ -20,7 +19,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('category.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> অর্থের খাত যুক্ত করুন </i></a> <br>  <br>
+    <a href="{{ route('unit.category.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> অর্থের খাত যুক্ত করুন </i></a> <br>  <br>
 
                     <h4 class="card-title">অর্থের খাত সকল ডাটা </h4>
 
@@ -42,9 +41,9 @@
                             <td> {{ $key+1}} </td>
                             <td> {{ $item->name }} </td>
                             <td>
-   <a href="{{ route('category.edit',$item->id) }}" class="btn btn-info sm" title="এডিট ডাটা">  <i class="fas fa-edit"></i> </a>
+   <a href="{{ route('unit.category.edit',$item->id) }}" class="btn btn-info sm" title="এডিট ডাটা">  <i class="fas fa-edit"></i> </a>
 
-     <a href="{{ route('category.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+     <a href="{{ route('unit.category.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 
                             </td>
 

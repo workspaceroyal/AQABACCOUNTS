@@ -40,7 +40,7 @@
                             </li>
 
 
-        <li>
+        {{-- <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-hotel-fill"></i>
                 <span>আয়ের উৎস</span>
@@ -94,13 +94,13 @@
           <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-reddit-fill"></i>
-                <span>মাস ও সন</span>
+                <span>তহবিল খাত</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('user.product.all') }}">মাস ও সন তালিকা</a></li>
+                <li><a href="{{ route('user.product.all') }}">তহবিল খাত তালিকা</a></li>
 
             </ul>
-        </li>
+        </li> --}}
 
 
           <li>
@@ -111,7 +111,7 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('user.purchase.all') }}">সকল জমা</a></li>
                 <li><a href="{{ route('user.purchase.pending') }}">জমা পেন্ডিং</a></li>
-                <li><a href="{{ route('user.daily.purchase.report') }}">প্রাত্যহিক জমা রিপোর্ট</a></li>
+                <li><a href="{{ route('user.daily.purchase.report') }}">জমা রিপোর্ট</a></li>
 
             </ul>
         </li>
@@ -125,8 +125,8 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('user.invoice.all') }}">সকল খরচ</a></li>
                 <li><a href="{{ route('user.invoice.pending.list') }}">খরচ পেন্ডিং</a></li>
-                <li><a href="{{ route('user.print.invoice.list') }}">সকল খরচ প্রিন্ট</a></li>
-                  <li><a href="{{ route('user.daily.invoice.report') }}">প্রাত্যহিক খরচ রিপোর্ট</a></li>
+                <li><a href="{{ route('user.print.invoice.list') }}">খরচ প্রিন্ট</a></li>
+                <li><a href="{{ route('user.daily.invoice.report') }}">খরচ রিপোর্ট</a></li>
 
             </ul>
         </li>

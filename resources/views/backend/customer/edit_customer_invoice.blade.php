@@ -79,7 +79,7 @@
    <div class="row">
         <div class="col-12">
 
-   <form method="post" action="{{ route('customer.update.invoice',$payment->invoice_id)}}">
+   <form method="post" action="{{ route('user.customer.update.invoice',$payment->invoice_id)}}">
           @csrf
 
             <div>
@@ -93,13 +93,13 @@
         <tr>
             <td><strong>Sl </strong></td>
             <td class="text-center"><strong>আয়ের খাত</strong></td>
-            <td class="text-center"><strong>মাস ও সন</strong>
+            <td class="text-center"><strong>তহবিল খাত</strong>
             </td>
             <td class="text-center"><strong>বর্তমান তহবিল</strong>
             </td>
             <td class="text-center"><strong>পরিমাণ</strong>
             </td>
-            <td class="text-center"><strong>পুনরাবৃত্তি</strong>
+            <td class="text-center"><strong>বিবরণ</strong>
             </td>
             <td class="text-center"><strong>মোট পরিমাণ</strong>
             </td>

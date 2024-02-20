@@ -14,7 +14,7 @@
 
 
 
-    <form method="post" action="{{ route('customer.update') }}" id="myForm" enctype="multipart/form-data" >
+    <form method="post" action="{{ route('user.customer.update') }}" id="myForm" enctype="multipart/form-data" >
                 @csrf
 
             <input type="hidden" name="id" value="{{ $customer->id }}">

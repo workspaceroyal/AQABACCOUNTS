@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="card-body">
 <h4>খরচ নং: #{{ $invoice->invoice_no }} - {{ date('d-m-Y',strtotime($invoice->date)) }} </h4>
-    <a href="{{ route('invoice.pending.list') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-list"> পেন্ডিং খরচের তালিকা </i></a> <br>  <br>
+    <a href="{{ route('user.invoice.pending.list') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-list"> পেন্ডিং খরচের তালিকা </i></a> <br>  <br>
 
      <table class="table table-dark" width="100%">
         <tbody>
@@ -45,14 +45,14 @@
      </table>
 
 
-     <form method="post" action="{{ route('approval.store',$invoice->id) }}">
+     <form method="post" action="{{ route('user.approval.store',$invoice->id) }}">
       @csrf
          <table border="1" class="table table-dark" width="100%">
             <thead>
                 <tr>
                     <th class="text-center">নং</th>
                     <th class="text-center">অর্থের খাত</th>
-                    <th class="text-center">মাস ও সন</th>
+                    <th class="text-center">তহবিল খাত</th>
                     <th class="text-center" style="background-color: #8B008B">বর্তমান তহবিল</th>
                     <th class="text-center">পরিমাণ</th>
                     <th class="text-center">পুনরাবৃত্তি</th>
@@ -76,7 +76,7 @@
             <td class="text-center">{{ $details['product']['name'] }}</td>
             <td class="text-center" style="background-color: #8B008B">৳ {{ $details['product']['quantity'] }}</td>
             <td class="text-center">৳ {{ $details->selling_qty }}</td>
-            <td class="text-center">{{ $details->unit_price }}</td>
+            <td class="text-center">{{ $details->description }}</td>
             <td class="text-center"> ৳{{ $details->selling_price }}</td>
         </tr>
         @php

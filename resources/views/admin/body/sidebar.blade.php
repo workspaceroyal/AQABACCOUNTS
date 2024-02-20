@@ -59,10 +59,9 @@
             </a>
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('customer.all') }}">ব্যয়ের সকল খাত</a></li>
-                 <li><a href="{{ route('credit.customer') }}">অগ্রিম ব্যয়ের রিপোর্ট</a></li>
-
-                 <li><a href="{{ route('paid.customer') }}">পরিশোধনীয় ব্যয়ের রিপোর্ট</a></li>
-                  <li><a href="{{ route('customer.wise.report') }}">খাত ভিত্তিক ব্যয়ের রিপোর্ট</a></li>
+                 <li><a href="{{ route('credit.customer') }}">অগ্রিম রিপোর্ট</a></li>
+                 <li><a href="{{ route('paid.customer') }}">পরিশোধনীয় রিপোর্ট</a></li>
+                  <li><a href="{{ route('customer.wise.report') }}">খাত ভিত্তিক রিপোর্ট</a></li>
 
             </ul>
         </li>
@@ -94,10 +93,10 @@
           <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-reddit-fill"></i>
-                <span>মাস ও সন</span>
+                <span>তহবিল খাত</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('product.all') }}">মাস ও সন তালিকা</a></li>
+                <li><a href="{{ route('product.all') }}">তহবিল খাত তালিকা</a></li>
 
             </ul>
         </li>
@@ -111,7 +110,7 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('purchase.all') }}">সকল জমা</a></li>
                 <li><a href="{{ route('purchase.pending') }}">জমা পেন্ডিং</a></li>
-                <li><a href="{{ route('daily.purchase.report') }}">প্রাত্যহিক জমা রিপোর্ট</a></li>
+                <li><a href="{{ route('daily.purchase.report') }}">জমা রিপোর্ট</a></li>
 
             </ul>
         </li>
@@ -125,8 +124,8 @@
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('invoice.all') }}">সকল খরচ</a></li>
                 <li><a href="{{ route('invoice.pending.list') }}">খরচ পেন্ডিং</a></li>
-                <li><a href="{{ route('print.invoice.list') }}">সকল খরচ প্রিন্ট</a></li>
-                  <li><a href="{{ route('daily.invoice.report') }}">প্রাত্যহিক খরচ রিপোর্ট</a></li>
+                <li><a href="{{ route('print.invoice.list') }}">খরচ প্রিন্ট</a></li>
+                  <li><a href="{{ route('daily.invoice.report') }}">খরচ রিপোর্ট</a></li>
 
             </ul>
         </li>
@@ -139,8 +138,8 @@
             <span>তহবিল</span>
         </a>
         <ul class="sub-menu" aria-expanded="false">
-            <li><a href="{{ route('stock.report') }}">তহবিল রিপোর্ট</a></li>
-            <li><a href="{{ route('stock.supplier.wise') }}">উৎস ও খাত ভিত্তিক তহবিল রিপোর্ট</a></li>
+            <li><a href="{{ route('stock.report') }}">সকল তহবিল রিপোর্ট</a></li>
+            <li><a href="{{ route('stock.supplier.wise') }}">উৎস ও খাত ভিত্তিক রিপোর্ট</a></li>
 
         </ul>
     </li>

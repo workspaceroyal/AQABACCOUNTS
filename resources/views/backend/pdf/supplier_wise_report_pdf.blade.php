@@ -93,7 +93,7 @@
             </td>
             <td class="text-center"><strong>অর্থের খাত</strong>
             </td>
-            <td class="text-center"><strong>মাস ও সময়</strong>
+            <td class="text-center"><strong>তহবিল খাত</strong>
             </td>
             <td class="text-center"><strong>তহবিল </strong>
             </td>

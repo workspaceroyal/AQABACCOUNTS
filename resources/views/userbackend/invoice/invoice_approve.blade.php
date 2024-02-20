@@ -52,7 +52,7 @@
                 <tr>
                     <th class="text-center">নং</th>
                     <th class="text-center">অর্থের খাত</th>
-                    <th class="text-center">মাস ও সন</th>
+                    <th class="text-center">তহবিল খাত</th>
                     <th class="text-center" style="background-color: #8B008B">বর্তমান তহবিল</th>
                     <th class="text-center">পরিমাণ</th>
                     <th class="text-center">পুনরাবৃত্তি</th>
@@ -76,7 +76,7 @@
             <td class="text-center">{{ $details['product']['name'] }}</td>
             <td class="text-center" style="background-color: #8B008B">৳ {{ $details['product']['quantity'] }}</td>
             <td class="text-center">৳ {{ $details->selling_qty }}</td>
-            <td class="text-center">{{ $details->unit_price }}</td>
+            <td class="text-center">{{ $details->description }}</td>
             <td class="text-center"> ৳{{ $details->selling_price }}</td>
         </tr>
         @php

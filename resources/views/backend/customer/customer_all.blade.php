@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('customer.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> ব্যয়ের খাত যুক্ত করুন </i></a> <br>  <br>
+    <a href="{{ route('user.customer.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> ব্যয়ের খাত যুক্ত করুন </i></a> <br>  <br>
 
                     <h4 class="card-title">ব্যয়ের খাত সকল ডাটা </h4>
 
@@ -51,9 +51,9 @@
                               <td> {{ $item->email }} </td>
                                <td> {{ $item->address }} </td>
                             <td>
-   <a href="{{ route('customer.edit',$item->id) }}" class="btn btn-info sm" title="এডিট ডাটা">  <i class="fas fa-edit"></i> </a>
+   <a href="{{ route('user.customer.edit',$item->id) }}" class="btn btn-info sm" title="এডিট ডাটা">  <i class="fas fa-edit"></i> </a>
 
-     <a href="{{ route('customer.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+     <a href="{{ route('user.customer.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 
                             </td>
 

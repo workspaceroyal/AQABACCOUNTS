@@ -94,10 +94,10 @@
           <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-reddit-fill"></i>
-                <span>মাস ও সন</span>
+                <span>তহবিল খাত</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('product.all') }}">মাস ও সন তালিকা</a></li>
+                <li><a href="{{ route('product.all') }}">তহবিল খাত তালিকা</a></li>
 
             </ul>
         </li>

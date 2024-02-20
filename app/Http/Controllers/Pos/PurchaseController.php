@@ -108,7 +108,7 @@ class PurchaseController extends Controller
         'message' => 'অবস্থা সফল ভাবে এপ্রুভ হয়েছে',
         'alert-type' => 'success'
           );
-    return redirect()->route('purchase.all')->with($notification);
+    return redirect()->route('purchase.pending')->with($notification);
 
         }
 
@@ -228,7 +228,7 @@ class PurchaseController extends Controller
         'message' => 'অবস্থা সফল ভাবে এপ্রুভ হয়েছে',
         'alert-type' => 'success'
           );
-    return redirect()->route('user.purchase.all')->with($notification);
+    return redirect()->route('user.purchase.pending')->with($notification);
 
         }
 

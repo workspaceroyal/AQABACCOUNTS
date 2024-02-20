@@ -86,12 +86,12 @@
     <table class="table">
         <thead>
         <tr>
-            <td><strong>নং </strong></td>
-            <td class="text-center"><strong>ব্যয়ের খাত</strong></td>
             <td class="text-center"><strong>খরচ নং  </strong>
             </td>
             <td class="text-center"><strong>তারিখ</strong>
             </td>
+            <td class="text-center"><strong>ব্যয়ের খাত</strong></td>
+
             <td class="text-center"><strong>বিবরণ</strong>
             </td>
             <td class="text-center"><strong>পরিমাণ  </strong>
@@ -108,10 +108,9 @@
         @endphp
         @foreach($allData as $key => $item)
         <tr>
-           <td class="text-center">{{ $key+1 }}</td>
-            <td class="text-center">{{ $item['payment']['customer']['name'] }}</td>
             <td class="text-center">#{{ $item->invoice_no }}</td>
             <td class="text-center">{{ date('d-m-Y',strtotime($item->date)) }}</td>
+            <td class="text-center">{{ $item['payment']['customer']['name'] }}</td>
             <td class="text-center">{{ $item->description }}</td>
             <td class="text-center"> ৳ {{ $item['payment']['total_amount'] }}</td>
 

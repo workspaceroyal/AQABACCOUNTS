@@ -44,7 +44,7 @@ class ProductController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'মাস ও সন সফল ভাবে ইনসার্ট হয়েছে',
+            'message' => 'তহবিল খাত সফল ভাবে ইনসার্ট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -80,7 +80,7 @@ class ProductController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'মাস ও সন সফল ভাবে আপডেট হয়েছে',
+            'message' => 'তহবিল খাত সফল ভাবে আপডেট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -94,7 +94,7 @@ class ProductController extends Controller
 
        Product::findOrFail($id)->delete();
             $notification = array(
-            'message' => 'মাস ও সন সফল ভাবে ডিলেট হয়েছে',
+            'message' => 'তহবিল খাত সফল ভাবে ডিলেট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -134,7 +134,7 @@ class ProductController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'মাস ও সন সফল ভাবে ইনসার্ট হয়েছে',
+            'message' => 'তহবিল খাত সফল ভাবে ইনসার্ট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -170,7 +170,7 @@ class ProductController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'মাস ও সন সফল ভাবে আপডেট হয়েছে',
+            'message' => 'তহবিল খাত সফল ভাবে আপডেট হয়েছে',
             'alert-type' => 'success'
         );
 
@@ -184,7 +184,7 @@ class ProductController extends Controller
 
        Product::findOrFail($id)->delete();
             $notification = array(
-            'message' => 'মাস ও সন সফল ভাবে ডিলেট হয়েছে',
+            'message' => 'তহবিল খাত সফল ভাবে ডিলেট হয়েছে',
             'alert-type' => 'success'
         );
 
