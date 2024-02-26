@@ -135,7 +135,7 @@
     <li>
         <a href="javascript: void(0);" class="has-arrow waves-effect">
             <i class="ri-gift-fill"></i>
-            <span>তহবিল</span>
+            <span>তহবিল রিপোর্ট</span>
         </a>
         <ul class="sub-menu" aria-expanded="false">
             <li><a href="{{ route('stock.report') }}">সকল তহবিল রিপোর্ট</a></li>

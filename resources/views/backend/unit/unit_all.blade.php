@@ -20,7 +20,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('user.unit.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> মুদ্রা যুক্ত করুন </i></a> <br>  <br>
+    <a href="{{ route('unit.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> মুদ্রা যুক্ত করুন </i></a> <br>  <br>
 
                     <h4 class="card-title">মুদ্রা সকল ডাটা </h4>
 
@@ -42,9 +42,9 @@
                             <td> {{ $key+1}} </td>
                             <td> {{ $item->name }} </td>
                             <td>
-   <a href="{{ route('user.unit.edit',$item->id) }}" class="btn btn-info sm" title="এডিট ডাটা">  <i class="fas fa-edit"></i> </a>
+   <a href="{{ route('unit.edit',$item->id) }}" class="btn btn-info sm" title="এডিট ডাটা">  <i class="fas fa-edit"></i> </a>
 
-     <a href="{{ route('user.unit.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+     <a href="{{ route('unit.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 
                             </td>
 

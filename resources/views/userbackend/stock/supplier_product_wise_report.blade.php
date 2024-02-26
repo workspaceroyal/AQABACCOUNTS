@@ -39,7 +39,7 @@
 
 <!--  /// Supplier Wise  -->
     <div class="show_supplier" style="display:none">
-        <form method="GET" action="{{ route('supplier.wise.pdf') }}" id="myForm" target="_blank" >
+        <form method="GET" action="{{ route('user.supplier.wise.pdf') }}" id="myForm" target="_blank" >
 
             <div class="row">
                 <div class="col-sm-8 form-group">
@@ -65,7 +65,7 @@
 
 <!--  /// Product Wise  -->
  <div class="show_product" style="display:none; ">
-        <form method="GET" action="{{ route('product.wise.pdf') }}" id="myForm" target="_blank" >
+        <form method="GET" action="{{ route('user.product.wise.pdf') }}" id="myForm" target="_blank" >
 
             <div class="row">
 

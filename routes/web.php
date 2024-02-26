@@ -221,12 +221,12 @@ Route::middleware('auth')->group(function(){
 
            // Category All Route
            Route::controller(CategoryController::class)->group(function () {
-               Route::get('/user/fundsector/all', 'UserCategoryAll')->name('unit.category.all');
-               Route::get('/user/fundsector/add', 'UserCategoryAdd')->name('unit.category.add');
-               Route::post('/user/fundsector/store', 'UserCategoryStore')->name('unit.category.store');
-               Route::get('/user/fundsector/edit/{id}', 'UserCategoryEdit')->name('unit.category.edit');
-               Route::post('/user/fundsector/update', 'UserCategoryUpdate')->name('unit.category.update');
-               Route::get('/user/fundsector/delete/{id}', 'UserCategoryDelete')->name('unit.category.delete');
+               Route::get('/user/fundsector/all', 'UserCategoryAll')->name('user.category.all');
+               Route::get('/user/fundsector/add', 'UserCategoryAdd')->name('user.category.add');
+               Route::post('/user/fundsector/store', 'UserCategoryStore')->name('user.category.store');
+               Route::get('/user/fundsector/edit/{id}', 'UserCategoryEdit')->name('user.category.edit');
+               Route::post('/user/fundsector/update', 'UserCategoryUpdate')->name('user.category.update');
+               Route::get('/user/fundsector/delete/{id}', 'UserCategoryDelete')->name('user.category.delete');
 
            });
 
@@ -275,15 +275,15 @@ Route::middleware('auth')->group(function(){
            });
 
            // Stock All Route
-        //    Route::controller(StockController::class)->group(function () {
-        //        Route::get('/user/fund/report', 'UserStockReport')->name('stock.report');
-        //        Route::get('/user/fund/report/pdf', 'UserStockReportPdf')->name('stock.report.pdf');
+           Route::controller(StockController::class)->group(function () {
+               Route::get('/user/fund/report', 'UserStockReport')->name('user.stock.report');
+               Route::get('/user/fund/report/pdf', 'UserStockReportPdf')->name('user.stock.report.pdf');
 
-        //        Route::get('/user/fund/fundingsource/wise', 'UserStockSupplierWise')->name('stock.supplier.wise');
-        //        Route::get('/user/fundingsource/wise/pdf', 'UserSupplierWisePdf')->name('supplier.wise.pdf');
-        //        Route::get('/user/monthyear/wise/pdf', 'UserProductWisePdf')->name('product.wise.pdf');
+               Route::get('/user/fund/fundingsource/wise', 'UserStockSupplierWise')->name('user.stock.supplier.wise');
+               Route::get('/user/fundingsource/wise/pdf', 'UserSupplierWisePdf')->name('user.supplier.wise.pdf');
+               Route::get('/user/monthyear/wise/pdf', 'UserProductWisePdf')->name('user.product.wise.pdf');
 
-        //    });
+           });
 
         }); // End User Middleware
 

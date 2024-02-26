@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('user.invoice.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> খরচ যুক্ত করুন </i></a> <br>  <br>
+    <a href="{{ route('invoice.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> খরচ যুক্ত করুন </i></a> <br>  <br>
 
                     <h4 class="card-title">খরচের সকল ডাটা </h4>
 
@@ -51,7 +51,7 @@
                  <td>  {{ $item->description }} </td>
                 <td>  ৳ {{ $item['payment']['total_amount'] }} </td>
                 <td>
-     <a href="{{ route('user.print.invoice',$item->id) }}" class="btn btn-danger sm" title="খরচ প্রিন্ট করুন" >  <i class="fa fa-print"></i> </a>
+     <a href="{{ route('print.invoice',$item->id) }}" class="btn btn-danger sm" title="খরচ প্রিন্ট করুন" >  <i class="fa fa-print"></i> </a>
                 </td>
 
             </tr>

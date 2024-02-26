@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('user.invoice.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> খরচ যুক্ত করুন </i></a> <br>  <br>
+    <a href="{{ route('invoice.add') }}" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fas fa-plus-circle"> খরচ যুক্ত করুন </i></a> <br>  <br>
 
                     <h4 class="card-title">পেন্ডিং খরচ সকল ডাটা </h4>
 
@@ -59,9 +59,9 @@
 
       <td>
        @if($item->status == '0')
- <a href="{{ route('user.invoice.approve',$item->id) }}" class="btn btn-dark sm" title="এপ্রুভড" >  <i class="fas fa-check-circle"></i> </a>
+ <a href="{{ route('invoice.approve',$item->id) }}" class="btn btn-dark sm" title="এপ্রুভড" >  <i class="fas fa-check-circle"></i> </a>
 
-<a href="{{ route('user.invoice.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+<a href="{{ route('invoice.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট" id="delete">  <i class="fas fa-trash-alt"></i> </a>
 @endif
 </td>
 

@@ -14,7 +14,7 @@
 
 
 
- <form method="post" action="{{ route('user.product.update') }}" id="myForm" >
+ <form method="post" action="{{ route('product.update') }}" id="myForm" >
                 @csrf
 
                 <input type="hidden" name="id" value="{{ $product->id }}">

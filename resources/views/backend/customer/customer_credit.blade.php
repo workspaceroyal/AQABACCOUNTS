@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('user.credit.customer.print.pdf') }}" target="_blank" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-print"> অগ্রিম ব্যয়েরস রিপোর্ট প্রিন্ট করুন </i></a> <br>  <br>
+    <a href="{{ route('credit.customer.print.pdf') }}" target="_blank" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-print"> অগ্রিম ব্যয়েরস রিপোর্ট প্রিন্ট করুন </i></a> <br>  <br>
 
                     <h4 class="card-title">অগ্রিম ব্যয়ের রিপোর্ট সকল ডাটা </h4>
 
@@ -51,9 +51,9 @@
         <td> {{  date('d-m-Y',strtotime($item['invoice']['date'])) }} </td>
         <td> ৳ {{ $item->due_amount }} </td>
         <td>
-   <a href="{{ route('user.customer.edit.invoice',$item->invoice_id) }}" class="btn btn-info sm" title="Edit Data">  <i class="fas fa-edit"></i> </a>
+   <a href="{{ route('customer.edit.invoice',$item->invoice_id) }}" class="btn btn-info sm" title="Edit Data">  <i class="fas fa-edit"></i> </a>
 
-     <a href="{{ route('user.customer.invoice.details.pdf',$item->invoice_id) }}" target="_blank" class="btn btn-danger sm" title="Customer Invoice Details">  <i class="fa fa-eye"></i> </a>
+     <a href="{{ route('customer.invoice.details.pdf',$item->invoice_id) }}" target="_blank" class="btn btn-danger sm" title="Customer Invoice Details">  <i class="fa fa-eye"></i> </a>
 
                             </td>
 

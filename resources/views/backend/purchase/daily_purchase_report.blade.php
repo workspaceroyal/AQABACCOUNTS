@@ -12,7 +12,7 @@
 
             <h4 class="card-title">প্রত্যাহিক জমা রিপোর্ট </h4><br><br>
 
-<form method="GET" action="{{ route('user.daily.purchase.pdf') }}" target="_blank" id="myForm">
+<form method="GET" action="{{ route('daily.purchase.pdf') }}" target="_blank" id="myForm">
     <div class="row">
 
 

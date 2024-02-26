@@ -110,7 +110,7 @@ class CategoryController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('unit.category.all')->with($notification);
+        return redirect()->route('user.category.all')->with($notification);
 
     } // End Method
 
@@ -138,7 +138,7 @@ class CategoryController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('unit.category.all')->with($notification);
+        return redirect()->route('user.category.all')->with($notification);
 
     }// End Method
 

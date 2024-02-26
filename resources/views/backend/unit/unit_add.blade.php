@@ -14,7 +14,7 @@
 
 
 
-            <form method="post" action="{{ route('user.unit.store') }}" id="myForm" >
+            <form method="post" action="{{ route('unit.store') }}" id="myForm" >
                 @csrf
 
             <div class="mb-3 row">

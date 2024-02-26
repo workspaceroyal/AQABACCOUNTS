@@ -133,17 +133,17 @@
 
                             {{-- <li class="menu-title">Stock</li> --}}
 
-    {{-- <li>
+    <li>
         <a href="javascript: void(0);" class="has-arrow waves-effect">
             <i class="ri-gift-fill"></i>
-            <span>তহবিল</span>
+            <span>তহবিল রিপোর্ট</span>
         </a>
         <ul class="sub-menu" aria-expanded="false">
-            <li><a href="{{ route('stock.report') }}">তহবিল রিপোর্ট</a></li>
-            <li><a href="{{ route('stock.supplier.wise') }}">উৎস ও খাত ভিত্তিক তহবিল রিপোর্ট</a></li>
+            <li><a href="{{ route('user.stock.report') }}">সকল তহবিল রিপোর্ট</a></li>
+            <li><a href="{{ route('user.stock.supplier.wise') }}">উৎস ও খাত ভিত্তিক রিপোর্ট</a></li>
 
         </ul>
-    </li> --}}
+    </li>
 
                             {{-- <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">

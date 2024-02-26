@@ -14,7 +14,7 @@
 
 
 
-            <form method="post" action="{{ route('user.supplier.store') }}" id="myForm" >
+            <form method="post" action="{{ route('supplier.store') }}" id="myForm" >
                 @csrf
 
             <div class="mb-3 row">

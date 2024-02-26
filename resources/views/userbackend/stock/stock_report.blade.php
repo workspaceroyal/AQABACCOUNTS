@@ -23,7 +23,7 @@
             <div class="card">
                 <div class="card-body">
 
-    <a href="{{ route('stock.report.pdf') }}" target="_blank" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-print">তহবিল রিপোর্ট প্রিন্ট </i></a> <br>  <br>
+    <a href="{{ route('user.stock.report.pdf') }}" target="_blank" class="btn btn-dark btn-rounded waves-effect waves-light" style="float:right;"><i class="fa fa-print">তহবিল রিপোর্ট প্রিন্ট </i></a> <br>  <br>
 
                     <h4 class="card-title">তহবিল রিপোর্ট সকল ডাটা</h4>
 

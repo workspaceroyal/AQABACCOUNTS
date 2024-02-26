@@ -12,7 +12,7 @@
 
             <h4 class="card-title">প্রাত্যহিক খরচের রিপোর্ট </h4><br><br>
 
-<form method="GET" action="{{ route('user.daily.invoice.pdf') }}" target="_blank" id="myForm">
+<form method="GET" action="{{ route('daily.invoice.pdf') }}" target="_blank" id="myForm">
     <div class="row">
 
 

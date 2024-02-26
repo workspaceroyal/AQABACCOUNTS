@@ -14,7 +14,7 @@
 
 
 
-    <form method="post" action="{{ route('user.customer.store') }}" id="myForm" enctype="multipart/form-data" >
+    <form method="post" action="{{ route('customer.store') }}" id="myForm" enctype="multipart/form-data" >
                 @csrf
 
             <div class="mb-3 row">

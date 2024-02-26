@@ -18,7 +18,8 @@
          <div class="col-md-1">
             <div class="md-3">
                 <label for="example-text-input" class="form-label">খরচ নং</label>
-                 <input class="form-control example-date-input" name="invoice_no" type="text" value="{{ $invoice_no }}"  id="invoice_no" readonly style="background-color:#ddd" >
+                 {{-- <input class="form-control example-date-input" name="invoice_no" type="text"  id="invoice_no" value="{{ $invoice_no }}"   readonly style="background-color:#ddd" > --}}
+                 <input class="form-control example-date-input" name="invoice_no" type="text"  id="invoice_no">
             </div>
         </div>
 
@@ -82,7 +83,7 @@
 <!--  ---------------------------------- -->
 
         <div class="card-body">
-        <form method="post" action="{{ route('user.invoice.store') }}">
+        <form method="post" action="{{ route('invoice.store') }}">
             @csrf
             <table class="table-sm table-bordered" width="100%" style="border-color: #ddd;">
                 <thead>

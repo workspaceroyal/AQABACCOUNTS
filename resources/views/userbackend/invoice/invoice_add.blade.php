@@ -18,7 +18,8 @@
          <div class="col-md-1">
             <div class="md-3">
                 <label for="example-text-input" class="form-label">খরচ নং</label>
-                 <input class="form-control example-date-input" name="invoice_no" type="text" value="{{ $invoice_no }}"  id="invoice_no" readonly style="background-color:#ddd" >
+                <input class="form-control example-date-input" name="invoice_no" type="text"  id="invoice_no">
+
             </div>
         </div>
 
