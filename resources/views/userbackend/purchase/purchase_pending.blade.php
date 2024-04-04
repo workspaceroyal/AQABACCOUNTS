@@ -64,11 +64,12 @@
                     @endif
                      </td>
 
-                <td>
-@if($item->status == '0')
-<a href="{{ route('user.purchase.approve',$item->id) }} " class="btn btn-danger sm" title="এপ্রুভ" id="ApproveBtn">  <i class="fas fa-check-circle"></i> </a>
-@endif
-                </td>
+                     <td>
+                        @if($item->status == '0')
+                        <a href="{{ route('purchase.approve',$item->id) }} " class="btn btn-danger sm" title="এপ্রুভ" id="ApproveBtn">  <i class="fas fa-check-circle"></i> </a>
+                        <a href="{{ route('purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+                        @endif
+                    </td>
 
             </tr>
                         @endforeach

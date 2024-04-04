@@ -39,7 +39,6 @@
                             <th>তহবিল খাত</th>
                             <th>বিবিরণ</th>
                             <th>অবস্থা</th>
-                            <th>একশন</th>
 
                         </thead>
 
@@ -50,26 +49,19 @@
             <tr>
                 <td> {{ $item->purchase_no }} </td>
                 <td> {{ date('d-m-Y',strtotime($item->date))  }} </td>
-                 <td> {{ $item['supplier']['name'] }} </td>
-                 <td> {{ $item['category']['name'] }} </td>
-                 <td>৳ {{ $item->buying_qty }} </td>
-                 <td> {{ $item['product']['name'] }} </td>
-                 <td>  {{ $item->description }} </td>
+                <td> {{ $item['supplier']['name'] }} </td>
+                <td> {{ $item['category']['name'] }} </td>
+                <td>৳ {{ $item->buying_qty }} </td>
+                <td> {{ $item['product']['name'] }} </td>
+                <td>  {{ $item->description }} </td>
 
-                 <td>
+                <td>
                     @if($item->status == '0')
                     <span class="btn btn-warning">পেন্ডিং</span>
                     @elseif($item->status == '1')
                     <span class="btn btn-success">এপ্রুভড</span>
                     @endif
-                     </td>
-
-                <td>
-@if($item->status == '0')
-<a href="{{ route('purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
-@endif
                 </td>
-
             </tr>
                         @endforeach
 

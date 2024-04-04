@@ -39,7 +39,6 @@
                             <th>তহবিল খাত</th>
                             <th>বিবিরণ</th>
                             <th>অবস্থা</th>
-                            <th>একশন</th>
 
                         </thead>
 
@@ -63,12 +62,6 @@
                     <span class="btn btn-success">এপ্রুভড</span>
                     @endif
                      </td>
-
-                <td>
-@if($item->status == '0')
-<a href="{{ route('user.purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট ডাটা" id="delete">  <i class="fas fa-trash-alt"></i> </a>
-@endif
-                </td>
 
             </tr>
                         @endforeach

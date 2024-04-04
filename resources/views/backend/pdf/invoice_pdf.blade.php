@@ -72,7 +72,7 @@
         <tr>
             <td><strong>ব্যয়ের খাত</strong></td>
             <td class="text-center"><strong>মোবাইল</strong></td>
-            <td class="text-center"><strong>ঠিকানা</strong>
+            <td class="text-center"><strong>ইমেইল</strong>
             </td>
             <td class="text-center"><strong>বিবরণ</strong>
             </td>
@@ -120,8 +120,8 @@
             <td class="text-center"><strong>অর্থের খাত</strong></td>
             <td class="text-center"><strong>তহবিল খাত</strong>
             </td>
-            <td class="text-center"><strong>বর্তমান তহবিল</strong>
-            </td>
+            {{-- <td class="text-center"><strong>বর্তমান তহবিল</strong>
+            </td> --}}
             <td class="text-center"><strong>পরিমাণ</strong>
             </td>
             <td class="text-center"><strong>পুনরাবৃত্তি</strong>
@@ -142,7 +142,7 @@
            <td class="text-center">{{ $key+1 }}</td>
             <td class="text-center">{{ $details['category']['name'] }}</td>
             <td class="text-center">{{ $details['product']['name'] }}</td>
-            <td class="text-center">{{ $details['product']['quantity'] }}</td>
+            {{-- <td class="text-center">{{ $details['product']['quantity'] }}</td> --}}
             <td class="text-center">{{ $details->selling_qty }}</td>
             <td class="text-center">{{ $details->description }}</td>
             <td class="text-center">৳ {{ $details->selling_price }}</td>
@@ -209,7 +209,7 @@
 
                     <div class="d-print-none">
                         <div class="float-end">
-                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট /্ডাউনলোড</i></a>
+                            <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"> প্রিন্ট / ডাউনলোড</i></a>
                             {{-- <a href="javascript:window.print()" class="btn btn-primary waves-effect waves-light ms-2">Download</a> --}}
                         </div>
                     </div>
@@ -240,6 +240,13 @@
                         </div> <!-- end row -->
 
                     </div> <!-- container-fluid -->
+                </div>
+
+                <div>
+                    <br><br>
+                    স্বাক্ষরঃ _______________
+                    <br><br>
+                    তারিখঃ _______________
                 </div>
 
 

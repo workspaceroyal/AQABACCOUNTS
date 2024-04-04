@@ -53,21 +53,21 @@
                  <td> {{ $item['supplier']['name'] }} </td>
                  <td> {{ $item['category']['name'] }} </td>
                  <td> {{ $item->buying_qty }} </td>
-                 <td> {{ $item['product']['name'] }} </td>
-                 <td>  {{ $item->description }} </td>
+                <td> {{ $item['product']['name'] }} </td>
+                <td>  {{ $item->description }} </td>
 
-                 <td>
+                <td>
                     @if($item->status == '0')
                     <span class="btn btn-warning">পেন্ডিং</span>
                     @elseif($item->status == '1')
                     <span class="btn btn-success">এপ্রভাল</span>
                     @endif
-                     </td>
-
+                </td>
                 <td>
-@if($item->status == '0')
-<a href="{{ route('purchase.approve',$item->id) }} " class="btn btn-danger sm" title="এপ্রুভ" id="ApproveBtn">  <i class="fas fa-check-circle"></i> </a>
-@endif
+                    @if($item->status == '0')
+                    <a href="{{ route('purchase.approve',$item->id) }} " class="btn btn-danger sm" title="এপ্রুভ" id="ApproveBtn">  <i class="fas fa-check-circle"></i> </a>
+                    <a href="{{ route('purchase.delete',$item->id) }}" class="btn btn-danger sm" title="ডিলেট" id="delete">  <i class="fas fa-trash-alt"></i> </a>
+                    @endif
                 </td>
 
             </tr>
