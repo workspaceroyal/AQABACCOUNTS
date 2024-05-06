@@ -28,6 +28,8 @@
                     <h4 class="card-title">খরচের সকল ডাটা </h4>
 
 
+                    {{-- <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                        <thead> --}}
                     <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
@@ -42,7 +44,7 @@
 
                         <tbody>
 
-                        	@foreach($allData as $key => $item)
+                        	@foreach($allData->sortByDesc('invoice_no') as $key => $item)
             <tr>
                 <td> #{{ $item->invoice_no }} </td>
                 <td> {{ date('d-m-Y',strtotime($item->date))  }} </td>

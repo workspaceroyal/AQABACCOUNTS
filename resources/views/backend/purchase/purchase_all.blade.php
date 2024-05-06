@@ -45,7 +45,7 @@
 
                         <tbody>
 
-                        	@foreach($allData as $key => $item)
+                        	@foreach($allData->sortByDesc('invoice_no') as $key => $item)
             <tr>
                 <td> {{ $item->purchase_no }} </td>
                 <td> {{ date('d-m-Y',strtotime($item->date))  }} </td>

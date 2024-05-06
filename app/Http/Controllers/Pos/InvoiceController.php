@@ -141,7 +141,7 @@ class InvoiceController extends Controller
         'message' => 'খরচের ডাটা সফল ভাবে ইনসার্ট হয়েছে',
         'alert-type' => 'success'
     );
-    return redirect()->route('invoice.pending.list')->with($notification);
+    return redirect()->route('user.invoice.all')->with($notification);
     } // End Method
 
 
@@ -375,7 +375,7 @@ class InvoiceController extends Controller
         'message' => 'খরচের ডাটা সফল ভাবে ইনসার্ট হয়েছে',
         'alert-type' => 'success'
     );
-    return redirect()->route('user.invoice.pending.list')->with($notification);
+    return redirect()->route('user.invoice.all')->with($notification);
     } // End Method
 
 
